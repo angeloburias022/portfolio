@@ -17,6 +17,7 @@
   .img {
     border-radius: 50%;
   }
+  
 </style>
 <body>
 
@@ -62,6 +63,9 @@
         </div>
       </div>
     </div>
+
+
+    
   </section>
 
   <!-- END slider -->
@@ -71,34 +75,34 @@
  
   <div class="skills-tab">
     <button class="tablinks" onclick="openResumeTabs(event, 'MySkills')" id="defaultOpenResume">My Skills</button>
-    <button class="tablinks" onclick="openResumeTabs(event, 'Paris')">Paris</button>
-    <button class="tablinks" onclick="openResumeTabs(event, 'Tokyo')">Tokyo</button>
+    <button class="tablinks" onclick="openResumeTabs(event, 'Education')">Education Background</button>
+    <button class="tablinks" onclick="openResumeTabs(event, 'Experienced')">Experienced</button>
   </div>
   
   <div id="MySkills" class="resume-tabcontent">
-   <div class="skills-grid-container">
+   <div class="resume-grid-container">
        <div class="skills-grid-item">
         <h3>Skills</h3>
-          <li> <a> Web Design </a> </li>
-          <li> <a> Web Development </a> </li>
-          <li> <a> Desktop App Development </a> </li>
-          <li> <a> Web Development </a> </li>
+          <li> <a class="anchor-tabs"> Web Design </a> </li>
+          <li> <a class="anchor-tabs"> Web Development </a> </li>
+          <li> <a class="anchor-tabs"> Desktop App Development </a> </li>
+          <li> <a class="anchor-tabs"> Web Development </a> </li>
       </div>
       <div class="skills-grid-item">
         <h3>Technical Skills</h3>
-            <li> <a> C#  </a> </li>
-            <li> <a> SQL  </a> </li>
-            <li> <a> C# Winforms </a> </li>
-            <li> <a> ASP.NET MVC  </a> </li>
-             <li> <a> Excel, Words  </a> </li>
+            <li> <a class="anchor-tabs"> C#  </a> </li>
+            <li> <a class="anchor-tabs"> SQL  </a> </li>
+            <li> <a class="anchor-tabs"> C# Winforms </a> </li>
+            <li> <a class="anchor-tabs"> ASP.NET MVC  </a> </li>
+             <li> <a class="anchor-tabs"> Excel, Words  </a> </li>
       </div>
       
       <div class="skills-grid-item">
         <h3> Personal Skills </h3>
-          <li> <a> Self-Learner        </a> </li>
-          <li> <a> Multi-tasker </a> </li>
-      <li> <a> Listener </a> </li>
-          <li> <a> Good Communication Skills </a> </li>
+          <li> <a class="anchor-tabs"> Self-Learner        </a> </li>
+          <li> <a class="anchor-tabs"> Multi-tasker </a> </li>
+      <li> <a class="anchor-tabs"> Listener </a> </li>
+          <li> <a class="anchor-tabs"> Good Communication Skills </a> </li>
       </div>
     </div>  
   </div>
@@ -106,14 +110,53 @@
 
 
 
-  <div id="Paris" class="resume-tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p> 
-  </div>
+  <div id="Education" class="resume-tabcontent">
+    <div class="resume-grid-container">
+      <div class="educ-grid-item">
+          <h3>Elementary</h3>
+          <li><a class="anchor-tabs">Padres Burgos Elementary School (2006-2011)</a> </li>
+      
+          <h3>High-School</h3>
+          <li><a class="anchor-tabs">Pasay City West High-School (2011-2016)</a> </li>
+      
+      
+          <h3>Senior High-School</h3>
+          <li><a class="anchor-tabs">Manila Tytana Colleges (2016-2018)</a> </li>
+      
+      
+          <h3>College</h3>
+          <li><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
+
+          <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
+          <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
+
+      </div>
+</div>
+
+      </div>
   
-  <div id="Tokyo" class="resume-tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+  <div id="Experienced" class="resume-tabcontent">
+    <div class="resume-grid-container">
+      <div class="Exp-grid-item">
+        <h3>RFB Airconditioning Services</h3>
+        <li><a> Software Developer (2019-2022)</a></li>
+        
+        <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
+        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+
+
+        <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
+        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+
+        <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
+        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+
+     
+        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+      </div>
+
+    </div>
   </div>
   
 
@@ -127,9 +170,33 @@
   <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_hover_tabs -->
 </div>
 
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
+<div id="Contact" class="resume-tabcontent">
+  <div class="resume-grid-container">
+
+    <div class="contact-grid-item">
+      <button class="accordion" id="fac">Cellphone No</button>
+      <div class="panel" >
+        <p>0909-553-2118</p>
+      </div>
+      
+      
+      <button class="accordion" id="fac">Email</button>
+      <div class="panel" >
+        <p>angeloburias24@gmail.com</p>
+      </div>
+      
+      <button class="accordion" id="fac">Facebook</button>
+      <div class="panel" >
+        <p>Angelo Bernaldez Burias</p>
+      </div>
+      
+      <button class="accordion" id="fac">Instagram</button>
+      <div class="panel" >
+        <p>@lou.burias</p>
+      </div>
+    </div>
+  </div>
+  
 </div>
 
 
