@@ -80,3 +80,82 @@ body {
 #News {background-color: transparent;}
 #Contact {background-color: transparent;}
 #About {background-color: transparent;}
+
+
+
+* {
+  box-sizing: border-box
+  }
+  body {font-family: "Lato", sans-serif;
+  
+  }
+  
+
+  
+  /* Style the tab */
+  .skills-tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    width: 30%;
+    height: 390px;
+    
+  }
+  
+  /* Style the buttons inside the tab */
+  .skills-tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  a {
+     text-align: justify;
+  }
+  
+  /* Change background color of buttons on hover */
+  .skills-tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .skills-tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .resume-tabcontent {
+    
+    padding: 0px 0px;
+    border: 1px solid #ccc;
+    width: auto;
+    border-left: none;
+    height: auto;
+  }
+  
+  a {
+    text-align: left;
+  }
+  
+  .skills-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+    padding: 0px;
+    
+  }
+  
+  .skills-grid-item {
+    background-color: transparent;
+    padding-left: 3px;
+    margin-left: 10px;
+    align: left;
+  }
