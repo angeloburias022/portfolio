@@ -6,14 +6,22 @@
 	margin: 0;
     padding: 0;
     font-weight: bolder;
+ 
 }
 
 #cs {
   padding-top: -40px;
 }
+.proj-name {
+  text-align: center;
+}
+*{
+  background-color: transparent;
+}
 body {
+  
   font-family: "Poppins", Arial, sans-serif;
-  background: #121212;
+  background-color:transparent;
   font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
@@ -54,7 +62,7 @@ body {
 /* Style tab links */
 .tablink {
   background-color: #555;
-  color: white;
+  color: white  ;
   float: left;
   border: none;
   outline: none;
@@ -65,23 +73,36 @@ body {
 }
 
 .tablink:hover {
-  background-color: #777;
+  background-color: #ccc;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
+.tabcontent, .projects-tabcontent  {
+  color: #ccc;
+
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
+
+#main-navigator { position: fixed; width: 100%;}
 
 #Home {background-color: transparent;}
 #News {background-color: transparent;}
 #Contact {background-color: transparent;}
 #About {background-color: transparent;}
 
+.download-cv, .btn-github {
+   padding: 5px;
+   color: #ccc;
+   background: transparent;
+}
 
+.download-cv:hover, .btn-github:hover {
+    background: #ccc;
+    color: #121212;
+    border: 1px solid #121212;
+}
 
 * {
   box-sizing: border-box
@@ -95,20 +116,20 @@ body {
 
   
   /* Style the tab */
-  .skills-tab {
+  .skills-tab, .Projects-tab{
     float: left;
     border: 1px solid #ccc;
     background-color: transparent;
     width: 30%;
-    height: 390px;
+    height: 454px;
     
   }
   
   /* Style the buttons inside the tab */
-  .skills-tab button {
+  .skills-tab button, .Projects-tab button {
     display: block;
     background-color: inherit;
-    color: black;
+    color: #ccc;
     padding: 22px 16px;
     width: 100%;
     border: none;
@@ -124,90 +145,259 @@ body {
   }
   
   /* Change background color of buttons on hover */
-  .skills-tab button:hover {
-    background-color: #ddd;
+  .skills-tab button:hover, .Projects-tab button:hover{
+    background-color: #ccc;
+    color: #121212;
   }
   
   /* Create an active/current "tab button" class */
-  .skills-tab button.active {
-    background-color: #ccc;
+  .skills-tab button.active, .Projects-tab button.active {
+    background: #ccc;
+    color: #121212;
   }
   
   /* Style the tab content */
-  .resume-tabcontent {
-    
+  .resume-tabcontent, .projects-tabcontent {
+   
     padding: 0px 0px;
     border: 1px solid #ccc;
     width: auto;
     border-left: none;
     height: auto;
   }
-  
+
   a {
     text-align: left;
   }
   
-  .resume-grid-container {
+.proj-grid-container {
+height: 452px;
+max-height: 452px;
+}
+
+  /* */
+  .resume-grid-container, .proj-grid-container {
     display: grid;
     grid-template-columns: auto auto;
     background-color: transparent;
     padding: 0px;
     
   }
+
+
+  #proj-img {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: transparent;
+    padding: 20px;
+    background-color:transparent;
+
+   
+  }
+
+.caption-container {
+  padding-top: 175px;
+ 
+}
+.img-Slides{
   
-  .skills-grid-item, .educ-grid-item, .Exp-grid-item, .contact-grid-item{
+  display: none;
+  
+}
+
+#rfb-grid-container{
+  height: 454px;
+}
+  .proj-img {
+     
+     border: 1px solid #ccc;
+  }
+  
+  .skills-grid-item, .educ-grid-item, .Exp-grid-item{
     background-color: transparent;
     padding-left: 3px;
     margin-left: 10px;
-    align: left;
+    text-align: left;
     
   }
 
 
+    .proj-grid-item{
+    background-color: transparent;
+    padding-left: 3px;
+    margin-left: 10px;
+    text-align: left;
+    
+  }
+
+  
+/* Contact Accordio */
   .accordion {
     background-color: transparent;
-   
+    color: #444;
+    font-weight: bolder;
     cursor: pointer;
     padding: 18px;
-    width: 70%;
-  
+    width:55%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
-    transition: 0.4s;
-    color: white;
-   
-  }
+    transition: 1s;
+    border: 1px solid #ccc;
   
-  .active {
-    background-color: transparent; 
-    color: #121212;
   }
-  
 
-  .accordion:hover{
-    background:rgba(255, 255, 255, 0.05);
+  .RFB {
+    width: 100%;
+
+  }
+
+  
+  .active1, .accordion:hover {
+    background-color: #ccc; 
+    color:
   }
   
   .panel {
     padding: 0 18px;
     display: none;
-    background-color: transparent;
+    background-color: #ccc;
     overflow: hidden;
+    width: 55%;
+    color: #121212;
   }
-  
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    font-size: 10px;
     color: #777;
     float: right;
     margin-left: 5px;
   }
   
-  .active:after {
+  .active1:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
   
+  
+  #cs {
+    padding-bottom: -300px;
+    margin-bottom: -205px;
+    z-index: 1000;
+    overflow-x: hidden;
+  }
+  
+/* Proj photo*/ 
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.img-container {
+  position: absolute;
+  
+}
+
+/* Hide the images by default */
+.img-Slides {
+  display: none;
+  max-width: 300px;
+  max-height: 200px;
+  padding-left: 160px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.img-cursor {
+  cursor: pointer;
+
+}
+.img-row{ 
+  padding: 100px;  
+}
+
+/* Next & previous buttons */
+.img-prev,
+.img-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 32px;
+  margin-top: -50px;
+  color: red;
+  background-color: #ccc;
+  border: 1px solid #121212;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-left: 20px;
+}
+
+/* Position the "next button" to the right */
+.image-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.img-prev:hover,
+.img-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #121212;
+  font-size: 25px;
+  padding: 8px 92px 0px -199;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  display: block;
+}
+
+/* Container for image text */
+.img-caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.img-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.img-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.img-demo {
+  opacity: 0.6;
+}
+
+.img-active,
+.img-demo:hover {
+  opacity: 1;
+}
+
   
   

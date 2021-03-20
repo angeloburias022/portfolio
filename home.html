@@ -10,150 +10,188 @@
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<title>Angelo Burias - Portfolio</title>
 </head>
 
 <style>
   .img {
     border-radius: 50%;
   }
+  body::after, body::before{
+    z-index: 1-00;
+  }
   
 </style>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, 'transparent')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
-<button class="tablink" onclick="openPage('About', this, 'transparent')"> <i class="fa fa-fw fa-user"></i>Resume</button>
-<button class="tablink" onclick="openPage('Projects', this, 'transparent')" ><i class="fa fa-fw fa-wrench"></i>Projects</button>
-<button class="tablink" onclick="openPage('Contact', this, 'transparent')"> <i class="fa fa-fw fa-envelope"></i>Contact me</button>
-
-
-<div id="Home" class="tabcontent">
-  
-<!-- Start of Slide -->
-  <section class="home-slider owl-carousel js-fullheight" id="cs">
-                     
-    <div class="slider-item js-fullheight">
-      <div class="overlay"></div>
-      <div class="container">
-        
-     
-        <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <center>   <img src="img/homeintro.jpg" class="img" alt="Avatar" style="width:200px"></center><br/>
-            <p><a href="#" class="scroll">Hello! I'm</a></p>
-            <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Angelo Burias </h1>
-          </div>
-        </div>
+  <!-- Navigation -->
+    <div class="btn-nav" id="main-navigator">
+        <button class="tablink" onclick="openPage('Home', this, 'transparent')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
+        <button class="tablink" onclick="openPage('Resume', this, 'transparent')"> <i class="fa fa-fw fa-user"></i>Resume</button>
+        <button class="tablink" onclick="openPage('Projects', this, 'transparent')" ><i class="fa fa-fw fa-wrench"></i>Projects</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'transparent')"> <i class="fa fa-fw fa-envelope"></i>Contact me</button>
       </div>
-    </div>
+  <!-- End of Navigation-->
 
-    <div class="slider-item js-fullheight">
-      <div class="overlay"></div>
-      <div class="container">
-        
-        
-        
-        <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+
+<!-- Home -->
+
+    <div id="Home" class="tabcontent">
+      
+    <!-- Start of Slide -->
+      <section class="home-slider owl-carousel js-fullheight">
+                        
+        <div class="slider-item js-fullheight">
+          <div class="overlay"></div>
+          <div class="container">
             
-           
-            <p><a href="#" class="scroll">I'm from Pasay</a></p>
-            <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">A Full Stack Developer</h1>
+        
+            <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
+              <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <center>   <img src="img/dec291.jpg" class="img" alt="Avatar" style="width:200px"></center><br/>
+                <p><a href="#" class="scroll">Hello! I'm</a></p>
+                <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Angelo Bernaldez Burias </h1>
+                <button class="download-cv"> <a href="/resume/CV-081020.docx" download> <i class="fa fa-download"> </i> Download Resume </a></button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="slider-item js-fullheight">
+          <div class="overlay"></div>
+          <div class="container">
+            
+            
+            
+            <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
+              <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                
+              
+                <p><a href="#" class="scroll">I'm from Pasay</a></p>
+               <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">A Full Stack Developer</h1>
+              </br>  <button class="btn-github"> <a href="https://github.com/angeloburias022"> <i class="fa fa-user"></i> Github Account</a></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-item js-fullheight">
+          <div class="overlay"></div>
+          <div class="container">
+            
+            
+            
+            <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
+              <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                
+              
+                <p><a href="#" class="scroll"></a></p>
+              <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">"Simplicity is the ultimate sophistication."</h1>
+              <p><a href="#" class="scroll">- Lao Tzu</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+
+      <!-- END slider -->
     </div>
 
+<!-- End of Home -->
 
+
+<!-- Resume -->
+
+    <div id="Resume" class="tabcontent">
+      <h3>Skills</h3>
     
-  </section>
-
-  <!-- END slider -->
-</div>
-<div id="About" class="tabcontent">
-  <h3>Skills</h3>
- 
-  <div class="skills-tab">
-    <button class="tablinks" onclick="openResumeTabs(event, 'MySkills')" id="defaultOpenResume">My Skills</button>
-    <button class="tablinks" onclick="openResumeTabs(event, 'Education')">Education Background</button>
-    <button class="tablinks" onclick="openResumeTabs(event, 'Experienced')">Experienced</button>
-  </div>
-  
-  <div id="MySkills" class="resume-tabcontent">
-   <div class="resume-grid-container">
-       <div class="skills-grid-item">
-        <h3>Skills</h3>
-          <li> <a class="anchor-tabs"> Web Design </a> </li>
-          <li> <a class="anchor-tabs"> Web Development </a> </li>
-          <li> <a class="anchor-tabs"> Desktop App Development </a> </li>
-          <li> <a class="anchor-tabs"> Web Development </a> </li>
+      <div class="skills-tab">
+        <button class="tablinks" onclick="openResumeTabs(event, 'MySkills')" id="defaultOpenResume">My Skills</button>
+        <button class="tablinks" onclick="openResumeTabs(event, 'Education')">Education Background</button>
+        <button class="tablinks" onclick="openResumeTabs(event, 'Experienced')">Experienced</button>
       </div>
-      <div class="skills-grid-item">
-        <h3>Technical Skills</h3>
-            <li> <a class="anchor-tabs"> C#  </a> </li>
-            <li> <a class="anchor-tabs"> SQL  </a> </li>
-            <li> <a class="anchor-tabs"> C# Winforms </a> </li>
-            <li> <a class="anchor-tabs"> ASP.NET MVC  </a> </li>
-             <li> <a class="anchor-tabs"> Excel, Words  </a> </li>
+
+      <div id="MySkills" class="resume-tabcontent">
+      <div class="resume-grid-container">
+          <div class="skills-grid-item">
+            <h3>Skills</h3>
+              <li> <a class="anchor-tabs"> Web Design </a> </li>
+              <li> <a class="anchor-tabs"> Web Development </a> </li>
+              <li> <a class="anchor-tabs"> Desktop App Development </a> </li>
+              <li> <a class="anchor-tabs"> Machine Learning  </a> </li>
+
+          </div>
+          <div class="skills-grid-item">
+            <h3>Technical Skills</h3>
+                <li> <a class="anchor-tabs"> C#  </a> </li>
+                <li> <a class="anchor-tabs"> Python </a> </li>
+                <li> <a class="anchor-tabs"> SQL  </a> </li>
+                <li> <a class="anchor-tabs"> C# Winforms </a> </li>
+                <li> <a class="anchor-tabs"> ASP.NET MVC  </a> </li>
+                <li> <a class="anchor-tabs"> Adobe Photoshop(CS6) </a> </li>
+
+                <li> <a class="anchor-tabs"> Excel, Words  </a> </li>
+          </div>
+          
+          <div class="skills-grid-item">
+            <h3> Personal Skills </h3>
+              <li> <a class="anchor-tabs"> Self-Learner        </a> </li>
+              <li> <a class="anchor-tabs"> Multi-tasker </a> </li>
+          <li> <a class="anchor-tabs"> Listener </a> </li>
+              <li> <a class="anchor-tabs"> Good Communication Skills </a> </li>
+          </div>
+        </div>  
       </div>
       
-      <div class="skills-grid-item">
-        <h3> Personal Skills </h3>
-          <li> <a class="anchor-tabs"> Self-Learner        </a> </li>
-          <li> <a class="anchor-tabs"> Multi-tasker </a> </li>
-      <li> <a class="anchor-tabs"> Listener </a> </li>
-          <li> <a class="anchor-tabs"> Good Communication Skills </a> </li>
-      </div>
-    </div>  
-  </div>
-  
+      <div id="Education" class="resume-tabcontent">
+        <div class="resume-grid-container">
+          <div class="educ-grid-item">
+              <h3>Elementary</h3>
+              <li><a class="anchor-tabs">Padres Burgos Elementary School (2006-2011)</a> </li>
+          
+              <h3>High-School</h3>
+              <li><a class="anchor-tabs">Pasay City West High-School (2011-2016)</a> </li>
+          
+          
+              <h3>Senior High-School</h3>
+              <li><a class="anchor-tabs">Manila Tytana Colleges (2016-2018)</a> </li>
+          
+          
+              <h3>College</h3>
+              <li><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
 
-
-
-  <div id="Education" class="resume-tabcontent">
-    <div class="resume-grid-container">
-      <div class="educ-grid-item">
-          <h3>Elementary</h3>
-          <li><a class="anchor-tabs">Padres Burgos Elementary School (2006-2011)</a> </li>
-      
-          <h3>High-School</h3>
-          <li><a class="anchor-tabs">Pasay City West High-School (2011-2016)</a> </li>
-      
-      
-          <h3>Senior High-School</h3>
-          <li><a class="anchor-tabs">Manila Tytana Colleges (2016-2018)</a> </li>
-      
-      
-          <h3>College</h3>
-          <li><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
-
-          <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
-          <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
-
-      </div>
-</div>
+              <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
+              <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
+              <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
+              <li style="visibility: hidden;"><a class="anchor-tabs">Rizal Technological University (2018-present)</a> </li>
+              
+              
+          </div>
+    </div>
 
       </div>
-  
-  <div id="Experienced" class="resume-tabcontent">
-    <div class="resume-grid-container">
-      <div class="Exp-grid-item">
-        <h3>RFB Airconditioning Services</h3>
-        <li><a> Software Developer (2019-2022)</a></li>
+      
+      <div id="Experienced" class="resume-tabcontent">
+        <div class="resume-grid-container">
+          <div class="Exp-grid-item">
+           <center> <h3 class="proj-name">RFB Airconditioning Services</h3></center>
+            <li><a> Software Developer (2019-2022)</a></li>
+            
+            <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
+            <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+
+
+            <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
+            <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+
+            <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
+            <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+
         
-        <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
-        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-
-
-        <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
-        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-
-        <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
-        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-
-     
-        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-        <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+            <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+            <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
             <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
           
             <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
@@ -172,78 +210,120 @@
 
       <div id="Projects" class="tabcontent">    
         <div class="RFB">
-        <h3> RFB Aircondition Services</h3>
-      
-        <div class="Projects-tab">
-          <button class="tablinks" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Description</button>
-          <button class="tablinks" onclick="openProjTabs(event, 'Photos')">Photos</button>
-          <button class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
-        </div>
-
-        <div id="proj-desc" class="projects-tabcontent">
-        <div class="proj-grid-container">
-            <div class="proj-grid-item">
-              <h3>Projects Details</h3>
-                <li> <a class="anchor-tabs"> System Name: RFB Management System </a> </li>
-                <li> <a class="anchor-tabs"> Project Type: Business Project </a> </li>
-                <li> <a class="anchor-tabs"> Development Type: Desktop Development </a> </li>
-                <li> <a class="anchor-tabs"> Machine Learning  </a> </li>
-
-            </div>
-            <div class="proj-grid-item">
-              <h3>Tools Used:</h3>
-                  <li> <a class="anchor-tabs"> C#  </a> </li>
-                  <li> <a class="anchor-tabs"> Python </a> </li>
-                  <li> <a class="anchor-tabs"> SQL  </a> </li>
-                  <li> <a class="anchor-tabs"> C# Winforms </a> </li>
-                  <li> <a class="anchor-tabs"> ASP.NET MVC  </a> </li>
-                  <li> <a class="anchor-tabs"> Adobe Photoshop(CS6) </a> </li>
-
-                  <li> <a class="anchor-tabs"> Excel, Words  </a> </li>
-            </div>
-            
-            <div class="proj-grid-item">
-              <h3> Features </h3>
-                <li> <a class="anchor-tabs"> Self-Learner        </a> </li>
-                <li> <a class="anchor-tabs"> Multi-tasker </a> </li>
-            <li> <a class="anchor-tabs"> Listener </a> </li>
-                <li> <a class="anchor-tabs"> Good Communication Skills </a> </li>
-            </div>
-        </div>
-          </div>  
+          <h3> RFB Aircondition Services</h3>
         
-        
-        <div id="Photos" class="projects-tabcontent">
-          <div class="proj-grid-container">
-            <div class="proj-grid-item">
-           
-            </div>
+          <div class="Projects-tab">
+            <button class="tablinks" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Description</button>
+            <button class="tablinks" onclick="openProjTabs(event, 'Photos')">Photos</button>
+            <button class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
           </div>
-        </div>
-        
+
+          <div id="proj-desc" class="projects-tabcontent">
+              <div class="proj-grid-container">
+                  <div class="proj-grid-item">
+                    <h3>Projects Details</h3>
+                      <li> <a class="anchor-tabs"> System Name: RFB Management System </a> </li>
+                      <li> <a class="anchor-tabs"> Project Type: Business Project </a> </li>
+                      <li> <a class="anchor-tabs"> Development Type: Desktop Development </a> </li>
+
+                  </div>
+                  <div class="proj-grid-item">
+                    <h3>Tools Used:</h3>
+                        <li> <a class="anchor-tabs"> C#  </a> </li>
+                        <li> <a class="anchor-tabs"> SQL  </a> </li>
+                        <li> <a class="anchor-tabs"> Stored procedure </a> </li>
+
+                  </div>
+              
+                  <div class="proj-grid-item">
+                    <h3> Features </h3>
+                      <li> <a class="anchor-tabs"> CRUD System  </a> </li>
+                      <li> <a class="anchor-tabs"> Data Graphs </a> </li>
+                  </div>  
+              
+            </div>  
+          </div>  
+          
+          <center>
+          <div id="Photos" class="projects-tabcontent">
+            <div class="proj-grid-container" id="rfb-grid-container">
+<center>
+              <div class="img-container" id="proj-img">
+                <div class="img-Slides">
+                  <div class="numbertext">1 / 6</div>
+            
+                  <img src="img/log.png" style="width: 410px;">
+                </div>
+              
+                <div class="img-Slides">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="img/DashBoard.png" style="width:680px;">
+                </div>
+              
+                <div class="img-Slides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="img/AddNewAdmin.png" style="width:500px;">
+                </div>
+                  
+                <div class="img-Slides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="img/Changepass.png" style="width:410px;">
+                </div>
+              
+                <div class="img-Slides">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="img/DispatchedList.png" style="width:620px;">
+                </div>
+                  
+                <div class="img-Slides">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="img/Employee.png" style="width:720px;">
+                </div>
+      
+                <a class="img-prev" onclick="plusSlides(-1)">❮</a>
+                <a class="img-next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container" >
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="img-row" style="visibility: hidden;">
+                  <div class="img-column">
+                    <img class="demo cursor" src="img/log.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+                  <div class="img-column">
+                    <img class="demo cursor" src="img/DashBoard.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                  <div class="img-column">
+                    <img class="demo cursor" src="img/AddNewAdmin.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="img-column">
+                    <img class="demo cursor" src="img/Changepass.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                  <div class="img-column">
+                    <img class="demo cursor" src="img/DispatchedList.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                  </div>    
+                  <div class="img-column">
+                    <img class="demo cursor" src="img/Employee.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                  </div>
+                </div>
+              </div>
+</center>
+            </div>
+            <!-- The carousel in the proj-->  
+         
+          </div>
+        </center>
+     
+
         <div id="dbModel" class="projects-tabcontent">
           <div class="proj-grid-container">
             <div class="projects-grid-item">
-              <h3>RFB Airconditioning Services</h3>
-              <li><a> Software Developer (2019-2022)</a></li>
+             
+              <center><img src="img/Image_export_RFBMonitoringSystem.jpeg" style="width: 720px;"></center>
               
-              <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
-              <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-
-
-              <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
-              <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-
-              <h3 style="visibility: hidden;">RFB Airconditioning Services</h3>
-              <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-
-          
-              <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-              <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-              <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
+           
             
-              <li style="visibility: hidden;"><a> Software Developer (2019-2022)</a></li>
-      
             </div>
 
           </div>
@@ -252,89 +332,70 @@
 
         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_hover_tabs -->
         </div>
+        </div>   
+      </div>
+    
+
+<!-- End of Project-->
 
 
-        <div class="Ron">
-          <h3> RFB Aircondition Services</h3>
-        
-          <div class="Projects-tab">
-            <button class="tablinks" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Description</button>
-            <button class="tablinks" onclick="openProjTabs(event, 'Photos')">Photos</button>
-            <button class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
+<!-- Contact-->
+
+      <div id="Contact" class="tabcontent">
+
+      </br>
+      </br>
+      </br>
+
+
+        <div class="contact">
+          <center>
+          <div class="contact-grid-item">
+            <button class="accordion" id="fac">Cellphone No</button>
+            <div class="panel" >
+              <p>0909-553-2118 (TNT)</p>
+            </div>
           </div>
-  
-          <div id="proj-desc" class="projects-tabcontent">
-          <div class="proj-grid-container">
-              <div class="projects-grid-item">
-                <h3>Projects Details</h3>
-                  <li> <a class="anchor-tabs"> System Name: RFB Management System </a> </li>
-                  <li> <a class="anchor-tabs"> Project Type: Business Project </a> </li>
-                  <li> <a class="anchor-tabs"> Development Type: Desktop Development </a> </li>
-                  <li> <a class="anchor-tabs"> Machine Learning  </a> </li>
-  
-              </div>
-              <div class="proj-grid-item">
-                <h3>Tools Used:</h3>
-                    <li> <a class="anchor-tabs"> C#  </a> </li>
-                    <li> <a class="anchor-tabs"> Python </a> </li>
-                    <li> <a class="anchor-tabs"> SQL  </a> </li>
-                    <li> <a class="anchor-tabs"> C# Winforms </a> </li>
-                    <li> <a class="anchor-tabs"> ASP.NET MVC  </a> </li>
-                    <li> <a class="anchor-tabs"> Adobe Photoshop(CS6) </a> </li>
-  
-                    <li> <a class="anchor-tabs"> Excel, Words  </a> </li>
-              </div>
-              
-              <div class="proj-grid-item">
-                <h3> Features </h3>
-                  <li> <a class="anchor-tabs"> Self-Learner        </a> </li>
-                  <li> <a class="anchor-tabs"> Multi-tasker </a> </li>
-              <li> <a class="anchor-tabs"> Listener </a> </li>
-                  <li> <a class="anchor-tabs"> Good Communication Skills </a> </li>
+
+          <div class="contact-grid-item">
+            <button class="accordion" id="fac">Email</button>
+            <div class="panel" >
+              <p>angeloburias24@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-grid-item">
+            <button class="accordion" id="fac">Facebook</button>
+            <div class="panel" >
+              <p>Angelo Bernaldez Burias</p>
+            </div>
+          </div>
+
+          <div class="contact-grid-item">
+            <button class="accordion" id="fac">Instagram</button>
+            <div class="panel" >
+              <p>@lou.burias</p>
+            </div>
+            </div>
+          
+          </center>
+        </div>
+
+
+      </br>
+    </br>
+    </br>
+    
+  </br>
+</br>
+</br>
       </div>
 
-    </div>
-  </div>
-  
+<!-- End of contact-->
 
-
+    </div> 
 </div>
 
-<div id="Projects" class="tabcontent">
-  <h3>Projects</h3>
-  <p>Some projects this fine day!</p> 
-
-  <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_hover_tabs -->
-</div>
-
-<div id="Contact" class="resume-tabcontent">
-  <div class="resume-grid-container">
-
-    <div class="contact-grid-item">
-      <button class="accordion" id="fac">Cellphone No</button>
-      <div class="panel" >
-        <p>0909-553-2118</p>
-      </div>
-      
-      
-      <button class="accordion" id="fac">Email</button>
-      <div class="panel" >
-        <p>angeloburias24@gmail.com</p>
-      </div>
-      
-      <button class="accordion" id="fac">Facebook</button>
-      <div class="panel" >
-        <p>Angelo Bernaldez Burias</p>
-      </div>
-      
-      <button class="accordion" id="fac">Instagram</button>
-      <div class="panel" >
-        <p>@lou.burias</p>
-      </div>
-    </div>
-  </div>
-  
-</div>
 
 
 
