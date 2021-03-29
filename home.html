@@ -5,32 +5,43 @@
 <link href="css/Home.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
 
+
+<link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/icomoon.css">
 <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Angelo Burias - Portfolio</title>
+<link rel="stylesheet" href="css/ionicons.min.css">
 <link rel="shortcut icon" href="/img/PortfolioIcon.ico" type="image/x-icon">
 </head>
 
 <style>
+  
   .img {
-    border-radius: 50%;
+    width: auto;
+    height: auto;
+    z-index: -100;
   }
-  body::after, body::before{
-    z-index: 1-00;
+
+  #lower-cap{
+    margin-top: -1850px;
+    z-index: 10;
   }
+ 
   
 </style>
 <body>
 
   <!-- Navigation -->
-    <div class="btn-nav" id="main-navigator">
+    <div class="btn-nav" id="main-navigator" class="responsive">
         <button class="tablink" onclick="openPage('Home', this, 'transparent')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
         <button class="tablink" onclick="openPage('Resume', this, 'transparent')"> <i class="fa fa-fw fa-user"></i>Resume</button>
         <button class="tablink" onclick="openPage('Projects', this, 'transparent')" ><i class="fa fa-fw fa-wrench"></i>Projects</button>
         <button class="tablink" onclick="openPage('Contact', this, 'transparent')"> <i class="fa fa-fw fa-envelope"></i>Contact</button>
+      
       </div>
   <!-- End of Navigation-->
 
@@ -41,18 +52,33 @@
       
     <!-- Start of Slide -->
       <section class="home-slider owl-carousel js-fullheight">
-                        
-        <div class="slider-item js-fullheight">
-          <div class="overlay"></div>
-          <div class="container">
             
-        
+        <div class="slider-item js-fullheight">
+ 
+          <div class="overlay"></div>
+    
+          <div class="container">
+               
             <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
               <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <center>   <img src="img/dec291.jpg" class="img" alt="Avatar" style="width:200px"></center><br/>
                 <p><a href="#" class="scroll">Hello! I'm</a></p>
-                <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Angelo Bernaldez Burias </h1>
+                <ul class="ftco-footer-social list-unstyled mt-4" id="icon-home_1">
+                  
+                  <li><a href="https://www.linkedin.com/in/angelo-burias-aba2691aa/"><span class="fa fa-linkedin"></span></a></li></br>
+                  <li><a href="https://github.com/angeloburias022"><span class="fa fa-github"></span></a></li></br>
+                </ul>
+
+                <ul class="ftco-footer-social list-unstyled mt 4" id="icon-home_2"> 
+               
+                </br>
+                  <li><a href="https://www.facebook.com/anjieluo.buliyasidao.9"><span class="icon-facebook"></span></a></li> </br>
+                  <li><a href="https://www.instagram.com/lou.burias/"><span class="icon-instagram"></span></a></li></br>
+                </ul>
+                <center>   <img src="img/33021.png" class="col-md-4 author-img" alt="Avatar" style="width:5000px"></center><br/>
+             
+                <h1 class="mb-3" id="lower-cap" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Angelo Burias </h1> </br>
                 <button class="download-cv"> <a href="/resume/Burias_AngeloCV-081020.docx" download> <i class="fa fa-download"> </i> Download Resume </a></button>
+               
               </div>
             </div>
           </div>
@@ -69,16 +95,19 @@
                 
               
                 <p><a href="#" class="scroll">I'm from Pasay</a></p>
-               <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">A Full Stack Developer</h1>
-              </br>  <button class="btn-github"> <a href="https://github.com/angeloburias022"> <i class="fa fa-user"></i> Github Account</a></button>
+               <h1 class="mb-3" data-scrollax="properties: {translateY: '70%', opacity: 1.6}">A Full Stack Developer</h1>
+              </br>  <button class="btn-github"> <a href="https://github.com/angeloburias022"> <i class="fa fa-github"></i> Github Account</a></button>
 
               </div>
             </div>
           </div>
         </div>
 
-        <div class="slider-item js-fullheight">
-          <div class="overlay"></div>
+
+
+
+        <div class="slider-item js-fullheight" id="mquery">
+       
           <div class="container">
             
             
@@ -87,46 +116,17 @@
               <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 
               
-                <p><a href="#" class="scroll"></a></p>
-              <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">"Simplicity is the ultimate sophistication."</h1>
-              <p><a href="#" class="scroll">- Lao Tzu</a></p>
-            </div>
-            </div>
-          </div>
-        </div>
-      
-      </section>
-
-
-      
-      <section class="ftco-section about-section">
-        <div class="container">
-          <div class="row d-flex" data-scrollax-parent="true">
-            <div class="col-md-4 author-img" style="background-image: url(img/AboutPhoto.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-6 wrap ftco-animate">
-              <div class="about-desc">
-                <h1 class="bold-text">About</h1>
-                <div class="p-5">
-                  <h2 class="mb-5">Hi! I'm Angelo Burias</h2>
-                  <p>As i continue to strive, being able to share my skills on companies that will gave me a chance to show what i got will be an Honor to me</p>
-                  <ul class="ftco-footer-social list-unstyled mt-4">
-                    <li><a href="https://twitter.com/IamLoutang"><span class="icon-twitter"></span></a></li>
-                    <li><a href="https://www.facebook.com/anjieluo.buliyasidao.9"><span class="icon-facebook"></span></a></li>
-                    <li><a href="#"><span class="icon-instagram"></span></a></li>
-                  </ul>
-                  <h5>Contact me here!</h5>
-                  <p>Email: <a href="#">angeloburias24@gmail.com</a></p>
-                  <p>Phone: <a href="#">0909-553-2118</a></p>
-                </div>
+               
+               <h2 class="mb-3" data-scrollax="properties: {translateY: '70%', opacity: 1.6}">"Simplicity is the ultimate sophistication."</h2>
+              </br>
+               <p><a href="#" class="scroll" style="color: rgb(59, 161, 252);">- Lao Tzu</a></p>
               </div>
             </div>
           </div>
         </div>
+
+
       </section>
-
-      
-
       <!-- END slider -->
     </div>
 
@@ -136,6 +136,37 @@
 <!-- Resume -->
 
     <div id="Resume" class="tabcontent">
+
+      
+      <section class="ftco-section about-section">
+
+        <div class="container">
+          <div class="row d-flex" data-scrollax-parent="true">
+          <div class="col-md-4 author-img" style="background-image: url(img/33021.png);" data-scrollax=" properties: { translateY: '-70%'}"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6 wrap ftco-animate">
+              <div class="about-desc">
+                <h1 class="bold-text">Resume</h1>
+                <div class="p-5">
+                  <h3 class="mb-5">Hi! I'm Angelo Bernaldez Burias</h3> 
+                  <p>As i continue my journey, being able to share my skills and knowledge on the companies that will gave me a chance to show what i capable of will be an Honor to me</p>
+                  <ul class="ftco-footer-social list-unstyled mt-4">
+                    <li><a href="https://www.facebook.com/anjieluo.buliyasidao.9"><span class="icon-facebook"></span></a></li>
+                    <li><a href="https://www.instagram.com/lou.burias/"><span class="icon-instagram"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/angelo-burias-aba2691aa/"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="https://github.com/angeloburias022"><span class="fa fa-github"></span></a></li>
+                  </ul>
+                  <h5>Contact me here!</h5>
+                  <p>Email: <a href="#">angeloburias24@gmail.com</a></p>
+                  <p>Phone: <a href="#">0909-553-2118</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
       <h3>Skills</h3>
     
       <div class="skills-tab">
@@ -145,9 +176,10 @@
       </div>
 
       <div id="MySkills" class="resume-tabcontent">
-      <div class="resume-grid-container">
+
+        <div class="resume-grid-container">
           <div class="skills-grid-item">
-            <h3>Skills</h3>
+            <h3 class="lbl-resume-item">Skills</h3>
               <li> <a class="anchor-tabs"> Web Design </a> </li>
               <li> <a class="anchor-tabs"> Web Development </a> </li>
               <li> <a class="anchor-tabs"> Desktop App Development </a> </li>
@@ -155,7 +187,7 @@
 
           </div>
           <div class="skills-grid-item">
-            <h3>Technical Skills</h3>
+            <h3 class="lbl-grid-item">Technical Skills</h3>
                 <li> <a class="anchor-tabs"> C#  </a> </li>
                 <li> <a class="anchor-tabs"> Python </a> </li>
                 <li> <a class="anchor-tabs"> SQL  </a> </li>
@@ -167,16 +199,18 @@
           </div>
           
           <div class="skills-grid-item">
-            <h3> Personal Skills </h3>
+            <h3 class="lbl-resume-item"> Personal Skills </h3>
               <li> <a class="anchor-tabs"> Self-Learner        </a> </li>
               <li> <a class="anchor-tabs"> Multi-tasker </a> </li>
           <li> <a class="anchor-tabs"> Listener </a> </li>
               <li> <a class="anchor-tabs"> Good Communication Skills </a> </li>
           </div>
         </div>  
+
       </div>
       
       <div id="Education" class="resume-tabcontent">
+
         <div class="resume-grid-container">
           <div class="educ-grid-item">
               <h3>Elementary</h3>
@@ -200,11 +234,12 @@
               
               
           </div>
-    </div>
+        </div>
 
       </div>
       
       <div id="Experienced" class="resume-tabcontent">
+
         <div class="resume-grid-container">
           <div class="Exp-grid-item">
            <center> <h3 class="proj-name">RFB Airconditioning Services</h3></center>
@@ -230,80 +265,90 @@
           </div>
 
         </div>
+
       </div>
+
     </div>
 
 <!-- end of Resume -->
 
 
 
-<!-- Projects -->
+<!-- RFB Projects -->
 
       <div id="Projects" class="tabcontent">    
         <div class="RFB">
           <h3> RFB Aircondition Services</h3>
         
+
+          <!-- RFB Project Button tab-->
           <div class="Projects-tab">
             <button class="tablinks" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Description</button>
             <button class="tablinks" onclick="openProjTabs(event, 'Photos')">Photos</button>
             <button class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
+            <button style="visibility: hidden;" class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
+            <button style="visibility: hidden;" class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
+           
           </div>
 
+
+<!-- RFB Project Description-->
           <div id="proj-desc" class="projects-tabcontent">
               <div class="proj-grid-container">
+
                   <div class="proj-grid-item">
-                    <h3>Projects Details:</h3>
+                    <h3 class="lbl-proj-item">Projects Details:</h3>
                       <li> <a class="anchor-tabs"> System Name: RFB Management System </a> </li>
                       <li> <a class="anchor-tabs"> Project Type: Business Project </a> </li>
                       <li> <a class="anchor-tabs"> Development Type: Desktop Development </a> </li>
-
                   </div>
+
                   <div class="proj-grid-item">
-                    <h3>Tools Used:</h3>
+                    <h3 class="lbl-proj-item">Tools Used:</h3>
                         <li> <a class="anchor-tabs"> C#  </a> </li>
                         <li> <a class="anchor-tabs"> SQL  </a> </li>
                         <li> <a class="anchor-tabs"> Stored procedure </a> </li>
-
                   </div>
               
                   <div class="proj-grid-item">
-                    <h3> Features: </h3>
+                    <h3 class="lbl-proj-item"> Features: </h3>
                       <li> <a class="anchor-tabs"> CRUD System  </a> </li>
                       <li> <a class="anchor-tabs"> Data Graphs </a> </li>
                   </div>  
               
-            </div>  
+              </div>  
           </div>  
-          
-          <center>
+        
+<!-- RFB Project Photos-->
+        
           <div id="Photos" class="projects-tabcontent">
-            <div class="proj-grid-container" id="rfb-grid-container">
+            <div class="proj-grid-container" id="rfb-grid-container" class="responsive">
 <center>
-              <div class="img-container" id="proj-img">
+              <div class="img-container">
                 <div class="img-Slides">
                   <div class="numbertext">1 / 6</div>
             
-                  <img src="img/log.png" style="width: 410px;">
+                  <img src="img/log.png" style="width: 410px;" id="proj-img">
                 </div>
               
                 <div class="img-Slides">
                   <div class="numbertext">2 / 6</div>
-                  <img src="img/DashBoard.png" style="width:680px;">
+                  <img src="img/DashBoard.png" style="width:680px;" id="proj-img">
                 </div>
               
                 <div class="img-Slides">
                   <div class="numbertext">3 / 6</div>
-                  <img src="img/AddNewAdmin.png" style="width:500px;">
+                  <img src="img/AddNewAdmin.png" style="width:500px;" id="proj-img">
                 </div>
                   
                 <div class="img-Slides">
                   <div class="numbertext">4 / 6</div>
-                  <img src="img/Changepass.png" style="width:410px;">
+                  <img src="img/Changepass.png" style="width:410px;" id="proj-img">
                 </div>
               
                 <div class="img-Slides">
                   <div class="numbertext">5 / 6</div>
-                  <img src="img/DispatchedList.png" style="width:620px;">
+                  <img src="img/DispatchedList.png" style="width:620px;" id="proj-img">
                 </div>
                   
                 <div class="img-Slides">
@@ -377,48 +422,46 @@
       </br>
       </br>
       </br>
-
-
         <div class="contact">
           <center>
 
             
           <div class="contact-grid-item">
-              <button class="accordion" id="fac">Github account </button>
+              <button class="accordion" id="fac">  Github  <i class="fa fa-github"></i> </button>
               <div class="panel" >
-                <a href="https://github.com/angeloburias022"> Click to visit </a>
+                <a href="https://github.com/angeloburias022">  Click to visit </a>
               </div>
             </div>
             <div class="contact-grid-item">
-              <button class="accordion" id="fac">Linkedin Account </button>
+              <button class="accordion" id="fac">   Linkedin  <i class="fa fa-linkedin"></i> </button>
               <div class="panel" >
                 <a href="https://www.linkedin.com/in/angelo-burias-aba2691aa/"> Click to visit </a>
               </div>
             </div>
             
           <div class="contact-grid-item">
-            <button class="accordion" id="fac">Cellphone No</button>
+            <button class="accordion" id="fac">Cellphone No: <i class="fas fa-phone"></i> </button>
             <div class="panel" >
               <p>0909-553-2118 (TNT)</p>
             </div>
           </div>
 
           <div class="contact-grid-item">
-            <button class="accordion" id="fac">Email</button>
+            <button class="accordion" id="fac">Email <i class="fa fa-envelope"></i></button>
             <div class="panel" >
               <p>angeloburias24@gmail.com</p>
             </div>
           </div>
 
           <div class="contact-grid-item">
-            <button class="accordion" id="fac">Facebook</button>
+            <button class="accordion" id="fac">Facebook <i class="fa fa-facebook"></i></button>
             <div class="panel" >
               <p>Angelo Bernaldez Burias</p>
             </div>
           </div>
 
           <div class="contact-grid-item">
-            <button class="accordion" id="fac">Instagram</button>
+            <button class="accordion" id="fac">Instagram <i class="fa fa-instagram"></i></button>
             <div class="panel" >
               <p>@lou.burias</p>
             </div>
@@ -447,15 +490,15 @@
 
 
 
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/scrollax.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/owl.carousel.min.js" defer></script>
+<script src="js/jquery.min.js" defer></script>
+<script src="js/jquery-migrate-3.0.1.min.js" defer></script>
+<script src="js/jquery.waypoints.min.js" defer></script>
+<script src="js/jquery.stellar.min.js" defer></script>
+<script src="js/owl.carousel.min.js" defer></script>
+<script src="js/aos.js" defer></script>
+<script src="js/scrollax.min.js" defer></script>
+<script src="js/main.js" defer></script>
 
 
 </body>

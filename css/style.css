@@ -6702,7 +6702,7 @@ button.bg-dark:focus {
   .ml-md-auto,
   .mx-md-auto {
     margin-left: auto !important; } }
-
+  
 @media (min-width: 992px) {
   .m-lg-0 {
     margin: 0 !important; }
@@ -7904,6 +7904,8 @@ header {
   @media (min-width: 768px) {
     .wrap .about-desc {
       position: relative; } }
+
+      /* resume caption */
   .wrap .about-desc .bold-text {
     position: absolute;
     top: -80px;

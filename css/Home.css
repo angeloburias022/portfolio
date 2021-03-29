@@ -82,10 +82,10 @@ body {
 
   display: none;
   padding: 100px 20px;
-  height: 100%;
+  height: 456px;
 }
 
-#main-navigator { position: fixed; width: 100%;}
+#main-navigator { position: fixed; width: 100%; z-index: 100;}
 
 #Home {background-color: transparent;}
 #News {background-color: transparent;}
@@ -97,6 +97,13 @@ body {
    color: #ccc;
    background: transparent;
 }
+
+@media (max-width: 600px){
+
+
+}
+
+
 
 .download-cv:hover, .btn-github:hover {
     background: #ccc;
@@ -158,7 +165,7 @@ body {
   
   /* Style the tab content */
   .resume-tabcontent, .projects-tabcontent {
-   
+    
     padding: 0px 0px;
     border: 1px solid #ccc;
     width: auto;
@@ -171,9 +178,63 @@ body {
   }
   
 .proj-grid-container {
-height: 452px;
-max-height: 452px;
+height: 456px;
+max-height: auto;
 }
+
+.proj-grid-item{}
+
+
+#icon-home_1 {
+  float: left;
+  color: red;
+}
+
+#icon-home_2{
+  float: right; 
+}
+
+
+
+@media (max-width: 900px){
+    .proj-grid-item{
+      font-size: 12px;
+     }
+    .lbl-proj-item {
+      font-size: 15px;
+    
+    }
+    .tablink {
+      font-size: 10px;
+  
+      
+      
+    }
+   .img-container{
+    width: auto;
+    display: none;
+    
+  }
+  .Projects-tab {
+
+    
+  }
+
+    
+
+    #main-navigator .nav-icon{
+      display: block;
+    }
+    
+    .skills-grid-item{
+      font-size: 10px;
+    }
+    .lbl-resume-item {
+      font-size: 15px;
+    }
+   
+  }
+
 
   /* */
   .resume-grid-container, .proj-grid-container {
@@ -184,6 +245,24 @@ max-height: 452px;
     
   }
 
+
+  @media (min-width: 576px) {
+    .resume-grid-container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .resume-grid-container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .resume-grid-container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .resume-grid-container {
+      max-width: 1140px; } }
+
+
+.resume-grid-container{
+  max-height: 452px;
+}
 
   #proj-img {
     display: grid;
@@ -204,6 +283,8 @@ max-height: 452px;
   display: none;
   
 }
+
+.c
 
 #rfb-grid-container{
   height: 454px;
@@ -248,15 +329,10 @@ max-height: 452px;
   
   }
 
-  .RFB {
-    width: 100%;
-
-  }
-
   
   .active1, .accordion:hover {
     background-color: #ccc; 
-    color:
+    
   }
   
   .panel {
