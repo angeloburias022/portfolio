@@ -26,6 +26,12 @@
     z-index: -100;
   }
 
+  
+.img-Slides {
+  width: 100%;
+  height: auto;
+}
+
   #lower-cap{
     margin-top: -1850px;
     z-index: 10;
@@ -42,7 +48,7 @@
         <button class="tablink" onclick="openPage('Projects', this, 'transparent')" ><i class="fa fa-fw fa-wrench"></i>Projects</button>
         <button class="tablink" onclick="openPage('Contact', this, 'transparent')"> <i class="fa fa-fw fa-envelope"></i>Contact</button>
       
-      </div>
+    </div>
   <!-- End of Navigation-->
 
 
@@ -286,9 +292,8 @@
             <button class="tablinks" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Description</button>
             <button class="tablinks" onclick="openProjTabs(event, 'Photos')">Photos</button>
             <button class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
-            <button style="visibility: hidden;" class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
-            <button style="visibility: hidden;" class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
-           
+
+          
           </div>
 
 
@@ -324,45 +329,52 @@
           <div id="Photos" class="projects-tabcontent">
             <div class="proj-grid-container" id="rfb-grid-container" class="responsive">
 <center>
+ 
               <div class="img-container">
+                <div class="img-btn">     
+                  <a class="img-prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="img-next" onclick="plusSlides(1)">❯</a>
+                </div>
+                
+
+                
                 <div class="img-Slides">
                   <div class="numbertext">1 / 6</div>
             
-                  <img src="img/log.png" style="width: 410px;" id="proj-img">
+                  <img src="img/log.png" style="width: 100%;" id="proj-img">
                 </div>
               
                 <div class="img-Slides">
                   <div class="numbertext">2 / 6</div>
-                  <img src="img/DashBoard.png" style="width:680px;" id="proj-img">
+                  <img src="img/DashBoard.png" id="proj-img">
                 </div>
               
                 <div class="img-Slides">
                   <div class="numbertext">3 / 6</div>
-                  <img src="img/AddNewAdmin.png" style="width:500px;" id="proj-img">
+                  <img src="img/AddNewAdmin.png"id="proj-img">
                 </div>
                   
                 <div class="img-Slides">
                   <div class="numbertext">4 / 6</div>
-                  <img src="img/Changepass.png" style="width:410px;" id="proj-img">
+                  <img src="img/Changepass.png"id="proj-img">
                 </div>
               
                 <div class="img-Slides">
                   <div class="numbertext">5 / 6</div>
-                  <img src="img/DispatchedList.png" style="width:620px;" id="proj-img">
+                  <img src="img/DispatchedList.png"id="proj-img">
                 </div>
                   
                 <div class="img-Slides">
-                  <div class="numbertext">6 / 6</div>
-                  <img src="img/Employee.png" style="width:720px;">
+                  <div class="numbertext">6 / 6</div> 
+                  <img src="img/Employee.png" id="proj-img">
                 </div>
       
-                <a class="img-prev" onclick="plusSlides(-1)">❮</a>
-                <a class="img-next" onclick="plusSlides(1)">❯</a>
+              
               
                 <div class="caption-container" >
                   <p id="caption"></p>
                 </div>
-              
+              <!--
                 <div class="img-row" style="visibility: hidden;">
                   <div class="img-column">
                     <img class="demo cursor" src="img/log.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
@@ -383,6 +395,7 @@
                     <img class="demo cursor" src="img/Employee.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                   </div>
                 </div>
+              -->
               </div>
 </center>
             </div>

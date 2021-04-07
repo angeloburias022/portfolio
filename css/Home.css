@@ -9,6 +9,7 @@
  
 }
 
+
 #cs {
   padding-top: -40px;
 }
@@ -213,12 +214,9 @@ max-height: auto;
    .img-container{
     width: auto;
     display: none;
-    
+  
   }
-  .Projects-tab {
-
-    
-  }
+  
 
     
 
@@ -289,9 +287,9 @@ max-height: auto;
 #rfb-grid-container{
   height: 454px;
 }
-  .proj-img {
-     
-     border: 1px solid #ccc;
+  #proj-img {
+     width: 100%;
+     height: auto;
   }
   
   .skills-grid-item, .educ-grid-item, .Exp-grid-item{
@@ -388,9 +386,20 @@ img {
 /* Hide the images by default */
 .img-Slides {
   display: none;
-  max-width: 300px;
-  max-height: 200px;
-  padding-left: 160px;
+  left: 150px;
+  max-width: 710px;
+  max-height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-btn {
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+  display: block;
+  right: 10;
+  
 }
 
 /* Add a pointer when hovering over the thumbnail images */
