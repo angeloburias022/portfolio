@@ -62,6 +62,7 @@ body {
 
 .tablink:hover {
   background-color: #777;
+  border: 1px solid transparent;
 }
 
 /* Style the tab content (and add height:100% for full page content) */

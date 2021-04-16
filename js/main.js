@@ -4,6 +4,8 @@
  });
 
 
+
+ // Main navigation js function
  function openPage(pageName,elmnt,color) {
 	var i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName("tabcontent");
@@ -338,3 +340,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " img-active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+

@@ -72,10 +72,12 @@ body {
   font-size: 17px;
   width: 25%;
 }
+.scroll {
+  font-size: 2vw;
 
-.tablink:hover {
-  background-color: #ccc;
 }
+
+
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent, .projects-tabcontent  {
@@ -88,22 +90,79 @@ body {
 
 #main-navigator { position: fixed; width: 100%; z-index: 100;}
 
+
+
+
+@media (max-width: 630px){
+
+  #main-navigator{
+     visibility:hidden;
+     transition: 3s;
+     content: "bye";
+  }
+
+  
+
+  .mini-nav {
+    visibility:visible;
+  }
+}
+
+@media (max-width: 300px) {
+  .owl-carousel {
+    margin-top: -120px;
+    height: auto;
+    background: transparent;
+    padding: 0px;
+  }
+}
 #Home {background-color: transparent;}
 #News {background-color: transparent;}
 #Contact {background-color: transparent;}
 #About {background-color: transparent;}
 
+
+
+/* Make the text responsive */
 .download-cv, .btn-github {
    padding: 5px;
    color: #ccc;
    background: transparent;
+  
 }
 
-@media (max-width: 600px){
+#download-resume, #git-btn {
+  font-size: 3vw;
+}
 
+#sophis {
+  font-size: 4vw;
+}
+
+#sophis-lao {
+  font-size: 2vw;
+}
+
+
+#icon-home_1 {
+  float: left;
+  color: red;
 
 }
 
+#icon-home_2{
+  float: right; 
+
+}
+
+
+@media(max-width: 333px) {
+  #icon-home_1, #icon-home_2 {
+    
+
+  }
+ 
+}
 
 
 .download-cv:hover, .btn-github:hover {
@@ -120,11 +179,23 @@ body {
   }
 
   
-  
+  .skills-tab{
+    float: left;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    width: auto;
+    height: 450px;
+    max-height: 450px;
+  }
+
+  .db-img {
+    height: auto;
+    margin: 100%;
+  }
 
   
   /* Style the tab */
-  .skills-tab, .Projects-tab{
+  .Projects-tab{
     float: left;
     border: 1px solid #ccc;
     background-color: transparent;
@@ -163,6 +234,10 @@ body {
     background: #ccc;
     color: #121212;
   }
+
+  #resume-text{
+    font-size: 160px;
+  }
   
   /* Style the tab content */
   .resume-tabcontent, .projects-tabcontent {
@@ -183,16 +258,8 @@ height: 456px;
 max-height: auto;
 }
 
-.proj-grid-item{}
-
-
-#icon-home_1 {
-  float: left;
-  color: red;
-}
-
-#icon-home_2{
-  float: right; 
+#bold-text {
+  font-size: 160px;
 }
 
 
@@ -213,11 +280,25 @@ max-height: auto;
     }
    .img-container{
     width: auto;
-    display: none;
-  
+    
   }
   
+.mini-nav {
+   
+   visibility: hidden;
+    background-color: red;
+}
 
+#ics {
+    font-size: 3vw;
+    height: auto;
+}
+
+#ics-a {
+    
+    padding: 0px;
+    display: none;
+}
     
 
     #main-navigator .nav-icon{
@@ -235,7 +316,7 @@ max-height: auto;
 
 
   /* */
-  .resume-grid-container, .proj-grid-container {
+  .resume-grid-container, .proj-grid-container, .skills-grid-container {
     display: grid;
     grid-template-columns: auto auto;
     background-color: transparent;
@@ -243,6 +324,19 @@ max-height: auto;
     
   }
 
+
+  @media (max-width: 426px){
+    .proj-grid-container {
+        font-size: 0px;
+    }
+  }
+
+
+  @media (max-width: 426px){
+    .skills-grid-container {
+        font-size: 0px;
+    }
+  }
 
   @media (min-width: 576px) {
     .resume-grid-container {
@@ -258,19 +352,45 @@ max-height: auto;
       max-width: 1140px; } }
 
 
+
+      
+  @media (min-width: 576px) {
+    .skills-grid-container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .skills-grid-container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .skills-grid-container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .skills-grid-container {
+      max-width: 1140px; } }
+
+
 .resume-grid-container{
   max-height: 452px;
 }
 
+
+.skills-grid-container{
+  max-height: 450px;
+}
   #proj-img {
     display: grid;
     grid-template-columns: auto;
     background-color: transparent;
     padding: 20px;
     background-color:transparent;
-
+    z-index: 100;
    
   }
+
+@media (max-width: 400px){
+
+  
+
+}
 
 .caption-container {
   padding-top: 175px;
@@ -402,6 +522,19 @@ img {
   
 }
 
+@media (max-width: 940px){
+
+      .img-btn {
+        position: absolute;
+        display: block;
+      }
+      .img-container {
+        
+      }
+
+}
+
+
 /* Add a pointer when hovering over the thumbnail images */
 .img-cursor {
   cursor: pointer;
@@ -484,5 +617,9 @@ img {
   opacity: 1;
 }
 
+
+
+/* ends here 4/13/21 4:55pm */
+
   
-  
+

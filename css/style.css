@@ -7667,7 +7667,9 @@ header {
   margin-top: 0; }
 
 .owl-carousel {
-  position: relative; }
+  position: relative;
+  top: -80px;
+}
   .owl-carousel .owl-item {
     opacity: .4; }
     .owl-carousel .owl-item.active {
@@ -7897,6 +7899,21 @@ header {
   .about-section .author-img {
     display: block;
     height: 300px; } }
+
+#author-img {
+  width: 250px;
+}
+
+@media (max-width: 287px){
+
+    #author-img{
+      width: 150px;
+      margin: 0px;
+      height: auto;
+    }
+    #
+
+}
 
 .wrap {
   padding: 0; }

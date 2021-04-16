@@ -1,0 +1,255 @@
+
+
+
+
+
+// css
+
+
+.proj-img-row > .proj-img-column {
+  padding: 0 8px;
+}
+
+.proj-img-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.proj-img-column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.proj-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.proj-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.proj-img-close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.proj-close:hover,
+.proj-close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.proj-img-mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.proj-img-prev,
+.proj-img-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.proj-img-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.proj-img-prev:hover,
+.proj-img-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.proj-active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+// html
+
+
+             
+  <div class="proj-img-row">
+    <div class="proj-img-column">
+      <img src="img/anotherWall.jpg" style="width:100%" onclick="openModal();proj_currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="proj-img-column">
+      <img src="img/busyKernel.png" style="width:100%; visibility: hidden;" onclick="openModal();proj_currentSlide(2)"  class="hover-shadow cursor">
+    </div>
+    <div class="proj-img-column">
+      <img src="img_mountains.jpg" style="width:100%; visibility: hidden;" onclick="openModal();proj_currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="proj-img-column">
+      <img src="img/DSC_5934.png" style="width:100%; visibility: hidden;" onclick="openModal();proj_currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  
+  <div id="myModal" class="proj-modal">
+    <span class="proj-img-close cursor" onclick="closeModal()">&times;</span>
+    <div class="proj-modal-content">
+  
+      <div class="proj-img-mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/anotherWall.jpg" style="width:100%">
+      </div>
+  
+      <div class="proj-img-mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/busyKernel.png" style="width:100%">
+      </div>
+  
+      <div class="proj-img-mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/DSC_5934.png" style="width:100%">
+      </div>
+      
+      <div class="proj-img-mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/DSC_5934.png" style="width:100%">
+      </div>
+      
+      <a class="proj-img-prev" onclick="proj_plusSlides(-1)">&#10094;</a>
+      <a class="proj-img-next" onclick="proj_plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <div class="proj-img-column">
+        <img class="proj-demo cursor" src="img/anotherWall.jpg" style="width:100%" onclick="proj_currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="proj-img-column">
+        <img class="proj-demo cursor" src="img/busyKernel.png" style="width:100%" onclick="proj_currentSlide(2)" alt="Snow">
+      </div>
+      <div class="proj-img-column">
+        <img class="proj-demo cursor" src="img/DSC_5934.png" style="width:100%" onclick="proj_currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="proj-img-column">
+        <img class="proj-demo cursor" src="img/DSC_5934.png" style="width:100%" onclick="proj_currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+      
+  
+  </div>
+
+
+
+// js 
+
+
+
+function openModal() {
+	document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+	document.getElementById("myModal").style.display = "none";
+  }
+  
+  var proj_slideIndex = 1;
+  proj_showSlides(proj_slideIndex);
+  
+  function proj_plusSlides(n) {
+	proj_showSlides(proj_slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+	proj_showSlides(proj_slideIndex = n);
+  }
+  
+  function proj_showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("proj-img-mySlides");
+	var dots = document.getElementsByClassName("proj-demo");
+	var captionText = document.getElementById("caption");
+	if (n > slides.length) {proj_slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" proj-active", "");
+	}
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " proj-active";
+	captionText.innerHTML = dots[proj_slideIndex-1].alt;
+  }
