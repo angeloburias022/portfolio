@@ -93,24 +93,24 @@ body {
 
 
 
-@media (max-width: 630px){
+@media (max-width: 700px){
 
   #main-navigator{
      visibility:hidden;
-     transition: 3s;
+     transition: .5s;
      content: "bye";
   }
 
   
 
-  .mini-nav {
-    visibility:visible;
+  .supermini-nav {
+    visibility: hidden;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .owl-carousel {
-    margin-top: -120px;
+    margin-top: -110px;
     height: auto;
     background: transparent;
     padding: 0px;
@@ -252,6 +252,11 @@ body {
   a {
     text-align: left;
   }
+
+.contact-grid-item{
+  width: 100%;
+  height: auto;
+}  
   
 .proj-grid-container {
 height: 456px;
@@ -286,7 +291,7 @@ max-height: auto;
 .mini-nav {
    
    visibility: hidden;
-    background-color: red;
+  
 }
 
 #ics {

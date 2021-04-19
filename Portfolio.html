@@ -16,7 +16,7 @@
 <title>Angelo Burias | Portfolio</title>
 <link rel="stylesheet" href="css/ionicons.min.css">
 <link rel="shortcut icon" href="/img/PortfolioIcon.ico" type="image/x-icon">
-
+<link rel="stylesheet" href="sample.css">
 </head>
 
 <style>
@@ -48,6 +48,10 @@
   When the website isi in 1000x1000
 -->
 
+
+
+
+
 <!-- Mini nav-->
 
 
@@ -62,10 +66,31 @@
       
     </div>
 
-    
-<div>
-  
+<link rel="stylesheet" href="sample.css">
+
+<div class="supermini-nav">
+    <nav class="menu">
+      <input type="checkbox" href="#" name="expandmenu" id="expandmenu" class="expandmenu">
+      <label class="expandmenu-button" for="expandmenu">
+        <span class="lines first-line"></span>
+        <span class="lines sec-line"></span>
+        <span class="lines third-line"></span>
+      </label>
+      <a href="#" class="menu-item col2" style="visibility: hidden;"><i class="fa fa-user"></i></a>
+      
+      <button onclick="openPage('Resume', this, 'transparent')" class="menu-item col2"><i class="fa fa-user"></i></button>
+
+      <button onclick="openPage('Contact', this, 'transparent')" class="menu-item col3"><i class="fa fa-envelope"></i></button>
+      <a  class="menu-item col4" style="visibility: hidden;"><i class="fa fa-cart-arrow-down"></i></a>
+      <button onclick="openPage('Projects', this, 'transparent')" class="menu-item col5"><i class="fa fa-phone"></i></button>
+
+      <button onclick="openPage('Home', this, 'transparent')" id="defaultOpen" class="menu-item col6"><i class="fa fa-home"></i></button>
+      
+    </nav>
 </div>
+
+
+   
  
 
   <!-- End of Navigation-->
@@ -308,9 +333,9 @@
 
           <!-- RFB Project Button tab-->
           <div class="Projects-tab">
-            <button class="tablinks" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Description</button>
+            <button class="tablinks" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Descr</button>
             <button class="tablinks" onclick="openProjTabs(event, 'Photos')">Photos</button>
-            <button class="tablinks" onclick="openProjTabs(event, 'dbModel')">Database Model</button>
+            <button class="tablinks" onclick="openProjTabs(event, 'dbModel')">DB Model</button>
 
           
           </div>
