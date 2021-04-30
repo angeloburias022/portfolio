@@ -1,5 +1,5 @@
 
-* {box-sizing: border-box}
+* {box-sizing: border-box;}
 
 /* Set height of body and the document to 100% */
 * {
@@ -86,6 +86,8 @@ body {
   display: none;
   padding: 100px 20px;
   height: 456px;
+  width: 100%;
+  max-height: 456;
 }
 
 #main-navigator { position: fixed; width: 100%; z-index: 100;}
@@ -107,6 +109,7 @@ body {
     visibility: hidden;
   }
 }
+
 
 @media (max-width: 400px) {
   .owl-carousel {
@@ -130,6 +133,8 @@ body {
    background: transparent;
   
 }
+
+
 
 #download-resume, #git-btn {
   font-size: 3vw;
@@ -157,10 +162,7 @@ body {
 
 
 @media(max-width: 333px) {
-  #icon-home_1, #icon-home_2 {
-    
-
-  }
+ 
  
 }
 
@@ -171,9 +173,7 @@ body {
     border: 1px solid #121212;
 }
 
-* {
-  box-sizing: border-box
-  }
+
   body {font-family: "Lato", sans-serif;
   
   }
@@ -184,8 +184,8 @@ body {
     border: 1px solid #ccc;
     background-color: transparent;
     width: auto;
-    height: 450px;
-    max-height: 450px;
+    height: 490px;
+    max-height: 490px;
   }
 
   .db-img {
@@ -203,6 +203,10 @@ body {
     height: 454px;
     
   }
+
+  .anchor-tabs {
+    font-size: 2vw;
+  }
   
   /* Style the buttons inside the tab */
   .skills-tab button, .Projects-tab button {
@@ -216,7 +220,7 @@ body {
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 2.1vw;
   }
   
   a {
@@ -240,13 +244,22 @@ body {
   }
   
   /* Style the tab content */
-  .resume-tabcontent, .projects-tabcontent {
+   .projects-tabcontent {
     
     padding: 0px 0px;
     border: 1px solid #ccc;
     width: auto;
     border-left: none;
     height: auto;
+  }
+
+  .resume-tabcontent {
+    width: 100%;
+    padding: 0px 0px;
+    border: 1px solid #ccc;
+    border-left: none;
+    height: 490px;
+    max-height: 490px;
   }
 
   a {
@@ -313,8 +326,8 @@ max-height: auto;
     .skills-grid-item{
       font-size: 10px;
     }
-    .lbl-resume-item {
-      font-size: 15px;
+    .lbl-resume-item, .educ-grid-item, .Exp-grid-item {
+      font-size: 3vw;
     }
    
   }
@@ -330,11 +343,6 @@ max-height: auto;
   }
 
 
-  @media (max-width: 426px){
-    .proj-grid-container {
-        font-size: 0px;
-    }
-  }
 
 
   @media (max-width: 426px){
@@ -388,7 +396,8 @@ max-height: auto;
     padding: 20px;
     background-color:transparent;
     z-index: 100;
-   
+    width: 100%;
+    height: auto;
   }
 
 @media (max-width: 400px){
@@ -404,7 +413,7 @@ max-height: auto;
 .img-Slides{
   
   display: none;
-  
+  position: relative;
 }
 
 .c
@@ -494,9 +503,7 @@ body {
   margin: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 img {
   vertical-align: middle;
@@ -524,18 +531,17 @@ img {
   z-index: 1;
   display: block;
   right: 10;
-  
+  width: 10px;
 }
 
-@media (max-width: 940px){
+@media (max-width: 340px){
 
       .img-btn {
         position: absolute;
-        display: block;
+        width: 0px;
+        display: ;
       }
-      .img-container {
-        
-      }
+     
 
 }
 
@@ -552,6 +558,7 @@ img {
 /* Next & previous buttons */
 .img-prev,
 .img-next {
+  z-index: 10;
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -625,6 +632,49 @@ img {
 
 
 /* ends here 4/13/21 4:55pm */
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}z
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
 
   
 
