@@ -1,3 +1,7 @@
+*:focus {
+  outline:0;
+}
+
 .expandmenu{
   display: none;
 }
@@ -9,9 +13,11 @@
 
 @media (max-width: 700px){
      .menu {
-       visibility: visible;
+       visibility:visible;
      }
 }
+
+
 .menu-item,
 .expandmenu-button {
   
@@ -73,8 +79,8 @@
   width: 80px;
   height: 80px;
   text-align: center;
-  box-sizing: border-box;
-  font-size: 26px;
+
+  font-size: 4.6vw;
 }
 .menu-item:hover{
   background: #EEEEEE;
@@ -102,7 +108,7 @@
   transition-duration: 180ms;
   }
 .expandmenu-button{
-  z-index: 2;
+  z-index: 20;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-duration: 400ms;
   transform:scale(1.1,1.1) translate3d(0,0,0);
@@ -114,7 +120,7 @@
     }
   .expandmenu:checked + .expandmenu-button{
     transition-timing-function: liner;
-    transition-duration: 200ms;
+    transition-duration: 1000ms;
     transform: scale(0.8, 0.8) translate3d(0,0,0);
   }
   .expandmenu:checked ~ .menu-item {
@@ -160,21 +166,26 @@
     text-shadow: none;
   }
   .col2{
+    
     background-color: transparent;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.14);
     text-shadow: 1px,1px,0,rgba(0,0,0,0.12); 
   }
+  .col2:focus, .col3:focus, .col5:focus, .col6:focus{
+    outline: 0;
+    background: #171717;
+  }
   .col2:hover{
-    color: #EEEEEE;
+    color: #24BCFC;
     text-shadow: none;
   }
   .col3{
-    background-color: transparent;
+    
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.14);
     text-shadow: 1px,1px,0,rgba(0,0,0,0.12); 
   }
   .col3:hover{
-    color: #FFC431;
+    color: #24BCFC;
     text-shadow: none;
   }
   .col4{
@@ -183,16 +194,16 @@
     text-shadow: 1px,1px,0,rgba(0,0,0,0.12); 
   }
   .col4:hover{
-    color: #FF670C;
+    color: #24BCFC;
     text-shadow: none;
   }
   .col5{
-    background-color: transparent;
+    background-color: #171717;
     box-shadow: 3px 3px 0 0 rgba(0,0,0,0.14);
     text-shadow: 1px,1px,0,rgba(0,0,0,0.12); 
   }
   .col5:hover{
-    color: #35FFD6;
+    color: #24BCFC;
     text-shadow: none;
   }
   .col6{
@@ -200,9 +211,9 @@
     box-shadow: 3px 3px 0 0 rgba(0,0,0,0.14);
     text-shadow: 1px,1px,0,rgba(0,0,0,0.12); 
   }
-  .col3:hover{
-    color: #0340D0;
-    text-shadow: none;
+  .col2, .col3, .col5, .col6{
+    z-index: 10;
+    background-color: #171717;
   }
   @media screen and (max-width: 700px){
     body{

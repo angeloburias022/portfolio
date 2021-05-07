@@ -1,0 +1,47 @@
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white  ;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+
+
+  
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent, .projects-tabcontent  {
+    color: #ccc;
+  
+    display: none;
+    padding: 100px 20px;
+    height: 456px;
+    width: 100%;
+    max-height: 456;
+  }
+  
+  #main-navigator { position: fixed; width: 100%; z-index: 100;}
+  
+  
+  
+  
+  @media (max-width: 700px){
+  
+    #main-navigator{
+       display:none;
+       transition: .5s;
+       content: "bye";
+    }
+  
+
+
+
+    #main-navigator .nav-icon{
+        display: block;
+      }

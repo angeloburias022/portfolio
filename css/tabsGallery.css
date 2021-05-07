@@ -1,0 +1,404 @@
+
+  .skills-tab{
+    float: left;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    width: auto;
+    height: 490px;
+    max-height: 490px;
+  }
+
+  .db-img {
+    height: auto;
+    margin: 100%;
+  }
+
+  
+  /* Style the tab */
+  .Projects-tab{
+    float: left;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    width: 30%;
+    height: 454px;
+    
+  }
+
+  .anchor-tabs {
+    font-size: 2vw;
+  }
+  
+  /* Style the buttons inside the tab */
+  .skills-tab button, .Projects-tab button {
+    display: block;
+    background-color: inherit;
+    color: #ccc;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 2.1vw;
+  }
+  
+  a {
+     text-align: justify;
+  }
+  
+  /* Change background color of buttons on hover */
+  .skills-tab button:hover, .Projects-tab button:hover{
+    background-color: #ccc;
+    color: #121212;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .skills-tab button.active, .Projects-tab button.active {
+    background: #ccc;
+    color: #121212;
+  }
+
+  #resume-text{
+    font-size: 160px;
+  }
+  
+  /* Style the tab content */
+   .projects-tabcontent {
+    
+    padding: 0px 0px;
+    border: 1px solid #ccc;
+    width: auto;
+    border-left: none;
+    height: auto;
+  }
+
+  .resume-tabcontent {
+    width: 100%;
+    padding: 0px 0px;
+    border: 1px solid #ccc;
+    border-left: none;
+    height: 490px;
+    max-height: 490px;
+  }
+
+  a {
+    text-align: left;
+  }
+
+.contact-grid-item{
+  width: 100%;
+  height: auto;
+}  
+  
+.proj-grid-container {
+height: 456px;
+max-height: auto;
+}
+
+#bold-text {
+  font-size: 160px;
+}
+
+
+
+@media (max-width: 900px){
+    .proj-grid-item{
+      font-size: 12px;
+     }
+    .lbl-proj-item {
+      font-size: 15px;
+    
+    }
+
+
+    
+    
+    .skills-grid-item{
+        font-size: 10px;
+      }
+      .lbl-resume-item, .educ-grid-item, .Exp-grid-item {
+        font-size: 2.0vw;
+      }
+     
+    }
+  
+  
+    /* */
+    .resume-grid-container, .proj-grid-container, .skills-grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: transparent;
+      padding: 0px;
+      
+    }
+  
+  
+  
+  
+    @media (max-width: 426px){
+      .skills-grid-container {
+          font-size: 0px;
+      }
+    }
+  
+    @media (min-width: 576px) {
+      .resume-grid-container {
+        max-width: 540px; } }
+    @media (min-width: 768px) {
+      .resume-grid-container {
+        max-width: 720px; } }
+    @media (min-width: 992px) {
+      .resume-grid-container {
+        max-width: 960px; } }
+    @media (min-width: 1200px) {
+      .resume-grid-container {
+        max-width: 1140px; } }
+  
+  
+  
+        
+    @media (min-width: 576px) {
+      .skills-grid-container {
+        max-width: 540px; } }
+    @media (min-width: 768px) {
+      .skills-grid-container {
+        max-width: 720px; } }
+    @media (min-width: 992px) {
+      .skills-grid-container {
+        max-width: 960px; } }
+    @media (min-width: 1200px) {
+      .skills-grid-container {
+        max-width: 1140px; } }
+  
+  
+  .resume-grid-container{
+    max-height: 452px;
+  }
+  
+  
+  .skills-grid-container{
+    max-height: 450px;
+  }
+    #proj-img {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: transparent;
+      padding: 20px;
+      background-color:transparent;
+      z-index: 100;
+      width: 100%;
+      height: auto;
+    }
+  
+  @media (max-width: 400px){
+  
+    
+  
+  }
+  
+  .caption-container {
+    padding-top: 175px;
+   
+  }
+  .img-Slides{
+    
+    display: none;
+    position: relative;
+  }
+  
+  .c
+  
+  #rfb-grid-container{
+    height: 454px;
+  }
+    #proj-img {
+       width: 100%;
+       height: auto;
+    }
+    
+    .skills-grid-item, .educ-grid-item, .Exp-grid-item{
+      background-color: transparent;
+      padding-left: 3px;
+      margin-left: 10px;
+      text-align: left;
+      
+    }
+  
+  
+      .proj-grid-item{
+      background-color: transparent;
+      padding-left: 3px;
+      margin-left: 10px;
+      text-align: left;
+      
+    }
+  
+
+
+    
+/* Position the image container (needed to position the left and right arrows) */
+.img-container {
+    position: absolute;
+    width: auto;
+  }
+  
+  /* Hide the images by default */
+  .img-Slides {
+    display: none;
+    left: 150px;
+    max-width: 710px;
+    max-height: 460px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .img-btn {
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+    display: block;
+    right: 10;
+    width: 10px;
+  }
+  
+  @media (max-width: 340px){
+  
+        .img-btn {
+          position: absolute;
+          width: 0px;
+          display: ;
+        }
+       
+  
+  }
+  
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .img-cursor {
+    cursor: pointer;
+  
+  }
+  .img-row{ 
+    padding: 100px;  
+  }
+  
+  /* Next & previous buttons */
+  .img-prev,
+  .img-next {
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 32px;
+    margin-top: -50px;
+    color: red;
+    background-color: #ccc;
+    border: 1px solid #121212;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: 20px;
+  }
+  
+  /* Position the "next button" to the right */
+  .image-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .img-prev:hover,
+  .img-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #121212;
+    font-size: 25px;
+    padding: 8px 92px 0px -199;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: block;
+  }
+  
+  /* Container for image text */
+  .img-caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .img-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .img-column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .img-demo {
+    opacity: 0.6;
+  }
+  
+  .img-active,
+  .img-demo:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  /* ends here 4/13/21 4:55pm */
+  
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }z
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  

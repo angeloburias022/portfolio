@@ -5,7 +5,7 @@
 <link href="css/Home.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
 
-
+<link rel="stylesheet" href="css/Navigation.css">
 <link rel="stylesheet" href="css/flaticon.css">
 <link rel="stylesheet" href="css/icomoon.css">
 <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -16,11 +16,14 @@
 <title>Angelo Burias | Portfolio</title>
 <link rel="stylesheet" href="css/ionicons.min.css">
 <link rel="shortcut icon" href="/img/PortfolioIcon.ico" type="image/x-icon">
-<link rel="stylesheet" href="sample.css">
+<link rel="stylesheet" href="css/mini-nav.css">
+<link rel="stylesheet" href="css/tabsGallery.css">
 </head>
 
 <style>
-  
+  *:focus {
+  outline:none;
+}
   .img {
     width: auto;
     height: auto;
@@ -60,10 +63,10 @@
 
   <!-- Navigation -->
     <div class="btn-nav" id="main-navigator" class="responsive">
-        <button class="tablink" onclick="openPage('Home', this, 'transparent')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
-        <button class="tablink" onclick="openPage('Resume', this, 'transparent')"> <i class="fa fa-fw fa-user"></i>Resume</button>
-        <button class="tablink" onclick="openPage('Projects', this, 'transparent')" ><i class="fa fa-fw fa-wrench"></i>Projects</button>
-        <button class="tablink" onclick="openPage('Contact', this, 'transparent')"> <i class="fa fa-fw fa-envelope"></i>Contact</button>
+        <button class="tablink" style="outline: 0;" onclick="openPage('Home', this, 'transparent')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
+        <button class="tablink" style="outline: 0;" onclick="openPage('Resume', this, 'transparent')"> <i class="fa fa-fw fa-user"></i>Resume</button>
+        <button class="tablink" style="outline: 0;" onclick="openPage('Projects', this, 'transparent')" ><i class="fa fa-fw fa-wrench"></i>Projects</button>
+        <button class="tablink" style="outline: 0;" onclick="openPage('Contact', this, 'transparent')"> <i class="fa fa-fw fa-envelope"></i>Contact</button>
       
     </div>
 
@@ -224,9 +227,9 @@
       <h3>Skills</h3>
     
       <div class="skills-tab">
-        <button class="tablinks" onclick="openResumeTabs(event, 'MySkills')" id="defaultOpenResume">My Skills</button>
-        <button class="tablinks" onclick="openResumeTabs(event, 'Education')">Education Background</button>
-        <button class="tablinks" onclick="openResumeTabs(event, 'Experienced')">Experienced</button>
+        <button class="tablinks" style="outline: 0;" onclick="openResumeTabs(event, 'MySkills')" id="defaultOpenResume">My Skills</button>
+        <button class="tablinks" style="outline: 0;"  onclick="openResumeTabs(event, 'Education')">Education Background</button>
+        <button class="tablinks" style="outline: 0;"  onclick="openResumeTabs(event, 'Experienced')">Experienced</button>
       </div>
 
       <div id="MySkills" class="resume-tabcontent">
@@ -318,8 +321,8 @@
 
           <!-- RFB Project Button tab-->
           <div class="Projects-tab">
-            <button class="tablinks" style="font-size: 2.3vw;" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Descr</button>
-            <button class="tablinks" style="font-size: 2.3vw;" onclick="openProjTabs(event, 'Photos')">Photos</button>
+            <button class="tablinks" style="font-size: 2.3vw; outline: 0;" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Descr</button>
+            <button class="tablinks" style="font-size: 2.3vw; outline: 0;" onclick="openProjTabs(event, 'Photos')">Photos</button>
             <button class="tablinks"  style="font-size:2.3vw;"onclick="openProjTabs(event, 'dbModel')">DB Model</button>
 
           
