@@ -1,0 +1,66 @@
+
+.heading{
+    text-align: center;
+    padding:1rem;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.heading span{
+    display: inline-block;
+    font-size: 2.5rem;
+    padding:.5rem 7rem;
+    color:#fff;
+    background:#171717;
+    border:.2rem solid #f1f1f1;
+    border-left-width: 1rem;
+    border-right-width: 1rem;
+}
+
+.review{
+    min-height: 100vh;
+}
+
+.review .review-slider{
+    margin:2rem auto;
+    width:80%;
+}
+
+.review .review-slider .box{
+    text-align: center;
+    padding:2rem;
+    margin:2rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+}
+
+.review .review-slider .box img{
+    height:10rem;
+    width:10rem;
+    margin:1rem auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .review-slider .box h3{
+    color:#444;
+    font-size: 2rem;
+}
+
+.review .review-slider .box p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:2rem;
+}
+
+.review .review-slider .box .stars i{
+    color:var(--blue);
+    font-size: 1.5rem;
+}
+.proj-name {
+    font-size: 1.5vw;
+}
+
+.proj-details {
+    font-size: 1vw;
+}

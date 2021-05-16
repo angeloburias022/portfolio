@@ -18,7 +18,9 @@
 <link rel="shortcut icon" href="/img/PortfolioIcon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/mini-nav.css">
 <link rel="stylesheet" href="css/tabsGallery.css">
-
+<link rel="stylesheet" href="css/projCarousel.css">
+<!-- owl carousel css cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
 </head>
 
@@ -185,9 +187,7 @@
   <!-- start of Resume -->
   <section class="resume-section">
       <div id="Resume" class="tabcontent">
-
-
-        
+    
         <section class="ftco-section about-section">
 
           <div class="container">
@@ -308,122 +308,41 @@
   <!-- start of RFB Projects -->
   <section class="project-section">
       <div id="Projects" class="tabcontent">    
-                <div class="RFB">
-                  <h3> RFB Aircondition Services</h3>
-                
+        <section class="review" id="review">
 
-                  <!-- RFB Project Button tab-->
-                  <div class="Projects-tab">
-                    <button class="tablinks" style="font-size: 2.3vw; outline: 0;" onclick="openProjTabs(event, 'proj-desc')" id="defaultOpenProj">Descr</button>
-                    <button class="tablinks" style="font-size: 2.3vw; outline: 0;" onclick="openProjTabs(event, 'Photos')">Photos</button>
-                    <button class="tablinks"  style="font-size:2.3vw;"onclick="openProjTabs(event, 'dbModel')">DB Model</button>
-
-                  
-                  </div>
-
-
-        <!-- RFB Project Description-->
-                  <div id="proj-desc" class="projects-tabcontent">
-                      <div class="proj-grid-container">
-
-                          <div class="proj-grid-item">
-                            <h3 class="lbl-proj-item">Projects Details:</h3>
-                              <li> <a class="anchor-tabs" style="font-size: 2vw;"> System Name: RFB Management System </a> </li>
-                              <li> <a class="anchor-tabs" style="font-size: 2vw;"> Project Type: Business Project </a> </li>
-                              <li> <a class="anchor-tabs" style="font-size: 2vw;"> Development Type: Desktop Development </a> </li>
-                          </div>
-
-                          <div class="proj-grid-item">
-                            <h3 class="lbl-proj-item">Tools Used:</h3>
-                                <li> <a class="anchor-tabs" style="font-size: 2vw;"> C#  </a> </li>
-                                <li> <a class="anchor-tabs" style="font-size: 2vw;"> SQL  </a> </li>
-                                <li> <a class="anchor-tabs" style="font-size: 2vw;"> Stored procedure </a> </li>
-                          </div>
-                      
-                          <div class="proj-grid-item">
-                            <h3 class="lbl-proj-item"> Features: </h3>
-                              <li> <a class="anchor-tabs" style="font-size: 2vw;"> CRUD System  </a> </li>
-                              <li> <a class="anchor-tabs" style="font-size: 2vw;"> Data Graphs </a> </li>
-                          </div>  
-                      
-                      </div>  
-                  </div>  
-                
-        <!-- RFB Project Photos-->
-                
-          <div id="Photos" class="projects-tabcontent">
-            <div class="proj-grid-container" id="rfb-grid-container" class="responsive" style="overflow-y: scroll;">
-
-
-
-              <div class="row"> 
-                <div class="column">
-                  <img src="/img/Changepass.png" style="width:100%">
-                  <img src="/img/DashBoard.png" style="width:100%">
-                  <img src="/img/AddNewAdmin.png" style="width:100%">
-                  <img src="/img/transaction.png" style="width:100%">
-                  <img src="/img/Services.png" style="width:100%">
-                  <img src="/img/Payroll.png" style="width:100%">
-                  <img src="/img/Employee.png" style="width:100%">
-                </div>
-                <div class="column">
-                  <img src="/img/Changepass.png" style="width:100%">
-                  <img src="/img/DashBoard.png" style="width:100%">
-                  <img src="/img/AddNewAdmin.png" style="width:100%">
-                  <img src="/img/transaction.png" style="width:100%">
-                  <img src="/img/Services.png" style="width:100%">
-                  <img src="/img/Payroll.png" style="width:100%">
-                  <img src="/img/Employee.png" style="width:100%">
-                </div>  
-                <div class="column">
-                  <img src="/img/Changepass.png" style="width:100%">
-                  <img src="/img/DashBoard.png" style="width:100%">
-                  <img src="/img/AddNewAdmin.png" style="width:100%">
-                  <img src="/img/transaction.png" style="width:100%">
-                  <img src="/img/Services.png" style="width:100%">
-                  <img src="/img/Payroll.png" style="width:100%">
-                  <img src="/img/Employee.png" style="width:100%">
-                </div>
-                <div class="column">
-                  <img src="/img/Changepass.png" style="width:100%">
-                  <img src="/img/DashBoard.png" style="width:100%">
-                  <img src="/img/AddNewAdmin.png" style="width:100%">
-                  <img src="/img/transaction.png" style="width:100%">
-                  <img src="/img/Services.png" style="width:100%">
-                  <img src="/img/Payroll.png" style="width:100%">
-                  <img src="/img/Employee.png" style="width:100%">
-                </div>
+          <h1 class="heading"><span>Projects</span></h1>
+          
+          <div class="review-slider owl-carousel">
+          
+              <div class="box">
+                  <img src="img/33021.png" alt="">
+                  <h3 class="proj-name">Face Mask Detection</h3>
+                <p class="proj-details"> here we are</p>
               </div>
-
-
-              
-
-
-
-                    </div>
-                    <!-- The carousel in the proj-->  
-                
+          
+              <div class="box">
+                  <img src="img/33021.png" alt="">
+                  <h3 class="proj-name"> CamRon Tattoo Website</h3>
+                  <p class="proj-details">here we are</p>
+              </div>
+          
+              <div class="box">
+                  <img src="img/33021.png" alt="">
+                  <h3 class="proj-name">RFB Website</h3>
+                <p class="proj-details"> Here we are</p>
+              </div>
+          
+              <div class="box">
+                  <img src="img/33021.png" alt="">
+                  <h3 class="proj-name"> RFB Desktop System</h3>
+                  <p class="proj-details"> Here we are </p>
+              </div>
+          
           </div>
-                </center>
-            
-
-                <div id="dbModel" class="projects-tabcontent">
-                  <div class="proj-grid-container">
-                    <div class="projects-grid-item">
-                    
-                      <center><img src="img/Image_export_RFBMonitoringSystem.jpeg" style="width: 100%; height: auto;"></center>
-                      
-                  
-                    
-                    </div>
-
-                  </div>
-              
-              
-
-                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_hover_tabs -->
-                </div>
-                </div>   
+          
+          </section>
+          
+          
       </div>
   </section>
 
@@ -512,6 +431,16 @@
 <script src="js/aos.js" defer></script>
 <script src="js/scrollax.min.js" defer></script>
 <script src="js/main.js" defer></script>
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- owl carousel js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script src="js/projCarousel.js"></script>
 
 
 </body>
