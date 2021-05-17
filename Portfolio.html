@@ -356,65 +356,72 @@
   <section class="Contact-section">
     <div id="Contact" class="tabcontent">
 
-          </br>
-          </br>
-          </br>
-            <div class="contact">
-              <center>
-
+      <div class="">
+        <div class="">
+          <div class="row">
+  
+            <div class="col-lg-12">
+              <div class="section-title mb-5">
+                <h2>Connect with me</h2>
+              </div>
+              <form method="post">
                 
-              <div class="contact-grid-item">
-                  <button class="accordion" id="fac">  Github  <i class="fa fa-github"></i> </button>
-                  <div class="panel" >
-                    <a href="https://github.com/angeloburias022">  Click to visit </a>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="fname">Facebook </label> 
+                            <a href="https://www.facebook.com/anjieluo.buliyasidao.9"> 
+                              <input type="text" readonly value="https://www.facebook.com/anjieluo.buliyasidao.9" id="lname" class="form-control form-control-lg">
+                            </a>
+                          </div>
+                        <div class="col-md-6 form-group">
+                            <label for="lname">Location </label>
+                            <a href="https://www.google.com/maps/place/Pasay,+Metro+Manila/data=!4m2!3m1!1s0x3397c949f8efe26d:0x954cef4739256660?sa=X&ved=2ahUKEwjp79-ZktDwAhWzmOYKHWJNBNUQ8gEwAHoECAMQAQ">
+                            <input type="text" readonly value="Pasay city 1300 Philippines" id="lname" class="form-control form-control-lg">
+                              </a>
+                          </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="eaddress">Email address </label>
+                            <a href="https://mail.google.com/">
+                            <input type="text" readonly value="angeloburias24@yahoo.com" id="myInput" class="form-control form-control-lg">
+                          </a> <br>
+                          <button type="button" class="btn btn-primary" onclick="myFunction()"> Copy Email</button>
+                          </div>
+                         
+                        <div class="col-md-6 form-group">
+                            <label for="tel">Tel. Number </label>
+                            <input readonly type="text" id="tel" value="8777-7966" class="form-control form-control-lg">
+                        </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                          <label for="eaddress">Linkedin </label>
+                          <a href="https://mail.google.com/">
+                          <input type="text" readonly value="angelo-burias" id="myInput" class="form-control form-control-lg">
+                        </a> <br>
+                        </div>
+                       
+                      <div class="col-md-6 form-group">
+                          <label for="tel">Instagram </label>
+                          <a href="https://www.instagram.com/lou.burias/">
+                            <input type="text" readonly value="lou.burias" id="myInput" class="form-control form-control-lg">
+                          </a> <br>  
+                        </div>
                   </div>
-                </div>
-                <div class="contact-grid-item">
-                  <button class="accordion" id="fac">   Linkedin  <i class="fa fa-linkedin"></i> </button>
-                  <div class="panel" >
-                    <a href="https://www.linkedin.com/in/angelo-burias-aba2691aa/"> Click to visit </a>
-                  </div>
-                </div>
-                
-              <div class="contact-grid-item">
-                <button class="accordion" id="fac">Cellphone No: <i class="fas fa-phone"></i> </button>
-                <div class="panel" >
-                  <p>0909-553-2118 (TNT)</p>
-                </div>
-              </div>
 
-              <div class="contact-grid-item">
-                <button class="accordion" id="fac">Email <i class="fa fa-envelope"></i></button>
-                <div class="panel" >
-                  <p>angeloburias24@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="contact-grid-item">
-                <button class="accordion" id="fac">Facebook <i class="fa fa-facebook"></i></button>
-                <div class="panel" >
-                  <p>Angelo Bernaldez Burias</p>
-                </div>
-              </div>
-
-              <div class="contact-grid-item">
-                <button class="accordion" id="fac">Instagram <i class="fa fa-instagram"></i></button>
-                <div class="panel" >
-                  <p>@lou.burias</p>
-                </div>
-                </div>
-              
-              </center>
+                  
+                  
+              </form>
             </div>
+            
+          </div>
+  
+          
+        </div>
+      </div>
 
-
-          </br>
-        </br>
-        </br>
-        
-      </br>
-    </br>
-    </br>
     </div>
   </section>
   <!-- End of contact-->
@@ -427,8 +434,17 @@
 </main>
 
 <!-- End of Content-->
+<script defer>
+  function myFunction() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Copied the Email: " + copyText.value);
+  }
+  </script>
 
-<script src="js/ButtonToTop.js"></script> 
+<script src="js/ButtonToTop.js" defer></script> 
 <script src="js/owl.carousel.min.js" defer></script>
 <script src="js/jquery.min.js" defer></script>
 <script src="js/jquery-migrate-3.0.1.min.js" defer></script>
