@@ -1,0 +1,175 @@
+.progress-bars {	
+    width: 45%;
+    margin: auto;
+    padding: 40px 20px 40px 20px;
+    height: auto;
+    border: 1px solid #171717;
+    display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   
+ }
+ 
+ @media (max-width: 500px){
+   .progress-bar {
+     flex: 100%; 
+   }
+ }
+ 
+@keyframes html1-progress-rfb {
+   0%   { width: 0px;}
+   100% { width: 30%;}
+}
+ 
+@keyframes css1-progress-rfb {
+   0%   { width: 0px;}
+   100% { width: 50%;}
+}
+ 
+@keyframes js1-progress-rfb {
+   0%   { width: 0px;}
+   100% { width: 20%;}
+}
+
+@keyframes cs1-progress-rfb {
+  0%   { width: 0px;}
+  100% { width: 75%;}
+}
+
+
+@keyframes html2-progress {
+  0%   { width: 0px;}
+  100% { width: 30%;}
+}
+
+@keyframes css2-progress {
+  0%   { width: 0px;}
+  100% { width: 50%;}
+}
+
+@keyframes js2-progress {
+  0%   { width: 0px;}
+  100% { width: 20%;}
+}
+
+@keyframes cs1-progress {
+ 0%   { width: 0px;}
+ 100% { width: 75%;}
+}
+
+@keyframes sq1-progress-rfb {
+  0%   { width: 0px;}
+  100% { width: 15%;}
+}
+
+@keyframes py1-progress-fm {
+  0%   { width: 0px;}
+  100% { width: 100%;}
+} 
+ 
+.html1 {
+   width: auto;
+   height: 30%;
+   background: dodgerblue;
+   position: relative;
+   border: 1px solid red;
+   animation: html1-progress-rfb 5s normal forwards;
+   flex: 50%;
+ }
+ 
+.css1 {
+   width: auto;
+   height: 30%;
+   background: red;
+   position: relative;
+   border: 1px solid #171717;
+   animation: css1-progress-rfb 5s normal forwards;
+   flex: 50%;
+ }
+ 
+ .js1 {
+   width: auto;
+   height: 30%;
+   background: yellow;
+   position: relative;
+   border: 1px solid #171717;
+   animation: js1-progress-rfb 5s normal forwards;
+ }
+
+
+ .html2 {
+  width: auto;
+  height: 30%;
+  background: dodgerblue;
+  position: relative;
+  border: 1px solid red;
+  animation: html2-progress 5s normal forwards;
+  flex: 50%;
+}
+
+.css2 {
+  width: auto;
+  height: 30%;
+  background: red;
+  position: relative;
+  border: 1px solid #171717;
+  animation: css2-progress 5s normal forwards;
+  flex: 50%;
+}
+
+.js2 {
+  width: auto;
+  height: 30%;
+  background: yellow;
+  position: relative;
+  border: 1px solid #171717;
+  animation: js2-progress 5s normal forwards;
+}
+ 
+  
+ .python1 {
+  width: auto;
+  height: 30%;
+  background: green;
+  position: relative;
+  border: 1px solid #171717;
+  animation: py1-progress-fm 5s normal forwards;
+}
+
+.cs1 {
+  width: auto;
+  height: 30%;
+  background: purple;
+  position: relative;
+  border: 1px solid #171717;
+  animation: cs1-progress-rfb 5s normal forwards;
+}
+ 
+
+.sq1 {
+  width: auto;
+  height: 30%;
+  background: orange;
+  position: relative;
+  border: 1px solid #171717;
+  animation: sq1-progress-rfb 5s normal forwards;
+}
+ 
+ .bar-container {
+     border: 1px solid white;
+     width: 25%;
+     margin: auto;
+     display: inline;
+ }
+ 
+ 
+ .percentage {
+     text-align: center;
+     color: #f7f7f7;
+     font-weight: 900;
+ }
+ 
+ .bar-caption {
+   text-align: right;
+ }
+ 

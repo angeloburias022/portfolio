@@ -26,8 +26,12 @@
 *{
   background-color: transparent;
 }
+
+.is-active .menu {
+  display: block;
+}
+
 body {
-  
   font-family: "Poppins", Arial, sans-serif;
   background-color:transparent;
   font-size: 18px;

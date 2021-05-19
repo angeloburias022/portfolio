@@ -1,0 +1,33 @@
+<html>
+
+    <body>
+
+
+        
+<link rel="stylesheet" href="bar.css">
+
+<div id="container">
+    <input type="checkbox" id="water"/>
+    <label for="water">
+      <div id="fill"></div>
+    </label>
+    <span>Progress</span>
+    <span id="progress">0%</span>
+  </div>
+
+
+<script>
+    window.onload = function(){
+  var elm = document.querySelector('#progress');
+  setInterval(function(){
+    if(!elm.innerHTML.match(/100%/gi)){
+      elm.innerHTML = (parseInt(elm.innerHTML) + 1) + '%';
+    } else {
+      clearInterval();
+    }
+  }, 18)
+}
+</script>
+    </body>
+
+</html>

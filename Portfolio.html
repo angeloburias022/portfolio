@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="css/mini-nav.css">
 <link rel="stylesheet" href="css/tabsGallery.css">
 <link rel="stylesheet" href="css/projCarousel.css">
-
+<link rel="stylesheet" href="css/progressBar.css">
 <link rel="stylesheet" href="css/ButtonToTop.css">
 <!-- owl carousel css cdn link  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -61,13 +61,15 @@
     
         <div class="btn-nav" id="main-navigator" class="responsive">
             <button class="tablink" style="outline: 0;" onclick="openPage('Home', this, 'transparent')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
-            <button class="tablink" style="outline: 0;" onclick="openPage('Resume', this, 'transparent')"> <i class="fa fa-fw fa-user"></i>Resume</button>
+            <button class="tablink" style="outline: 0;" onclick="openPage('Resume', this, 'transparent')"> <i class="fa fa-fw fa-user"></i>Know me</button>
             <button class="tablink" style="outline: 0;" onclick="openPage('Projects', this, 'transparent')" ><i class="fa fa-fw fa-wrench"></i>Projects</button>
             <button class="tablink" style="outline: 0;" onclick="openPage('Contact', this, 'transparent')"> <i class="fa fa-fw fa-envelope"></i>Contact</button>   
         </div>
 
 
-        <div class="supermini-nav">
+      <div class="min-class">
+       <div class="supermini-nav">
+          
             <nav class="menu">
               <input type="checkbox" href="#" name="expandmenu" id="expandmenu" class="expandmenu">
               <label class="expandmenu-button" for="expandmenu">
@@ -75,19 +77,20 @@
                 <span class="lines sec-line"></span>
                 <span class="lines third-line"></span>
               </label>
-              <a href="#" class="menu-item col2" style="visibility: hidden;"><i class="fa fa-user"></i></a>
               
-              <button onclick="openPage('Resume', this, 'transparent')" class="menu-item col2"><i class="fa fa-user"></i></button>
-
-              <button onclick="openPage('Contact', this, 'transparent')" class="menu-item col3"><i class="fa fa-envelope"></i></button>
-              <a  class="menu-item col4" style="visibility: hidden;"><i class="fa fa-cart-arrow-down"></i></a>
-              <button onclick="openPage('Projects', this, 'transparent')" class="menu-item col5"><i class="fa fa-wrench"></i></button>
-
-              <button onclick="openPage('Home', this, 'transparent')" id="defaultOpen" class="menu-item col6"><i class="fa fa-home"></i></button>
+               <a href="#" class="menu-item col2" style="visibility: hidden;"><i class="fa fa-user"></i></a>
               
+              <button onclick="openPage('Resume', this, 'transparent')" class="menu-item col2 men"><i class="fa fa-user"></i></button>
+
+              <button onclick="openPage('Contact', this, 'transparent')" class="menu-item col3 men"><i class="fa fa-envelope"></i></button>
+              <a  class="menu-item col4 men" style="visibility: hidden;"><i class="fa fa-cart-arrow-down"></i></a>
+              <button onclick="openPage('Projects', this, 'transparent')" class="menu-item col5 men"><i class="fa fa-wrench"></i></button>
+
+              <button onclick="openPage('Home', this, 'transparent')" id="defaultOpen" class="menu-item col6 men"><i class="fa fa-home"></i></button>
+             
             </nav>
         </div> 
-         
+      </div>
 </nav>
 
 <!-- End of Navigation-->
@@ -198,7 +201,7 @@
               <div class="col-md-2"></div>
               <div class="col-md-6 wrap ftco-animate">
                 <div class="about-desc">
-                  <h1 class="bold-text" id="bold-text">Resume</h1>
+                  <h1 class="bold-text" id="bold-text">Know me more</h1>
                   <div class="p-5">
                     <h3 class="mb-5">Hi! I'm Angelo Bernaldez Burias</h3> 
                     <p>As i continue my journey, being able to share my skills and knowledge on the companies that will gave me a chance to show what i capable of will be an Honor to me</p>
@@ -319,25 +322,96 @@
               <div class="box">
                   <img src="img//withmask.png" alt="">
                   <h3 class="proj-name">Face Mask Detection</h3>
-                <p class="proj-details"> here we are</p>
+                 
+                  <div class="row">
+                    <h4 class="bar-caption">Python </h4>
+                    <div class="bar-container">
+                      <div class="python1"> <span class="percentage" id="py1">0%</span>  </div>
+                    </div>
+                  </div>
+                  
+            
               </div>
           
               <div class="box">
                   <img src="img/CamRonLogo.png" alt="">
                   <h3 class="proj-name"> CamRon Tattoo Website</h3>
-                  <p class="proj-details">here we are</p>
+                  <!--
+
+                    <p class="proj-details"></p>
+
+                  --> 
+
+    
+                  <div class="row">
+                    <h4 class="bar-caption">Html </h4>
+                    <div class="bar-container">
+                      <div class="html2"> <span class="percentage" id="html2">0%</span>  </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    
+                    <h4 class="bar-caption">CSS                 </h4>
+                    <div class="bar-container">
+                    <div class="css2"> <span class="percentage" id="css2">0%</span>  </div> 
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <h4 class="bar-caption">JS</h4>
+                    <div class="bar-container">
+                      <div class="js2"> <span class="percentage" id="js2">0%</span>  </div> 
+                    </div>
+                  </div>
+
+                 
               </div>
           
               <div class="box">
                   <img src="img/rfb_logo.ico" alt="">
                   <h3 class="proj-name">RFB Website</h3>
-                <p class="proj-details"> Here we are</p>
+                
+                  <div class="row">
+                    <h4 class="bar-caption">Html </h4>
+                    <div class="bar-container">
+                      <div class="html1"> <span class="percentage" id="html1">0%</span>  </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    
+                    <h4 class="bar-caption">CSS                 </h4>
+                    <div class="bar-container">
+                    <div class="css1"> <span class="percentage" id="css1">0%</span>  </div> 
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <h4 class="bar-caption">JS</h4>
+                    <div class="bar-container">
+                      <div class="js1"> <span class="percentage" id="js1">0%</span>  </div> 
+                    </div>
+                  </div>
               </div>
           
               <div class="box">
                   <img src="img/rfb_logo.ico" alt="">
                   <h3 class="proj-name"> RFB Desktop System</h3>
-                  <p class="proj-details"> Here we are </p>
+                  <div class="row">
+                    
+                    <h4 class="bar-caption">C#                 </h4>
+                    <div class="bar-container">
+                    <div class="cs1"> <span class="percentage" id="cs1">0%</span>  </div> 
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <h4 class="bar-caption">SQL</h4>
+                    <div class="bar-container">
+                      <div class="sq1"> <span class="percentage" id="sq1">0%</span>  </div> 
+                    </div>
+                  </div>
               </div>
           
           </div>
@@ -443,7 +517,8 @@
     alert("Copied the Email: " + copyText.value);
   }
   </script>
-
+<script src="js/progressBar.js" defer></script>
+<script src="js/Mini_nav.js" defer></script>
 <script src="js/ButtonToTop.js" defer></script> 
 <script src="js/owl.carousel.min.js" defer></script>
 <script src="js/jquery.min.js" defer></script>
