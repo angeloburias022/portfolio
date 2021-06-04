@@ -97,10 +97,11 @@ body {
 
 /* Make the text responsive */
 .download-cv, .btn-github {
-   padding: 5px;
+   padding: 2px 8px 2px 8px;
    color: #ccc;
    background: transparent;
-  
+   z-index: 9999999;
+   
 }
 
 

@@ -1,3 +1,9 @@
+.box {
+  max-height: 531px;
+  height: 530px;
+  background-color: transparent;
+}
+
 .progress-bars {	
     width: 45%;
     margin: auto;
@@ -18,17 +24,23 @@
  
 @keyframes html1-progress-rfb {
    0%   { width: 0px;}
-   100% { width: 30%;}
+   100% { width: 20%;}
 }
  
 @keyframes css1-progress-rfb {
    0%   { width: 0px;}
-   100% { width: 50%;}
+   100% { width: 20%;}
 }
  
 @keyframes js1-progress-rfb {
    0%   { width: 0px;}
-   100% { width: 20%;}
+   100% { width: 10%;}
+}
+
+
+@keyframes bts-progress-rfb {
+  0%   { width: 0px;}
+  100% { width: 50%;}
 }
 
 @keyframes cs1-progress-rfb {
@@ -61,6 +73,8 @@
   0%   { width: 0px;}
   100% { width: 15%;}
 }
+
+
 
 @keyframes py1-progress-fm {
   0%   { width: 0px;}
@@ -117,6 +131,16 @@
   flex: 50%;
 }
 
+
+.bootstrap {
+  width: auto;
+  height: 30%;
+  background: yellow;
+  position: relative;
+  border: 1px solid #171717;
+  animation: bts-progress-rfb 5s normal forwards;
+}
+
 .js2 {
   width: auto;
   height: 30%;
@@ -153,6 +177,11 @@
   position: relative;
   border: 1px solid #171717;
   animation: sq1-progress-rfb 5s normal forwards;
+}
+
+.html1,.html2,.css1, .css2, .js1, .js2, .python1, .sq1 {
+  width: auto;
+ 
 }
  
  .bar-container {

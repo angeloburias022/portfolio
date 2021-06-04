@@ -7745,6 +7745,7 @@ header {
         background: #2f89fc;
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
+        z-index: unset;
         color: #fff;
         height: calc(78vh - 518px);
         min-height: 550px;

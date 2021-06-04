@@ -4,7 +4,7 @@
 
   let html_1 = document.querySelector('#html1');
 
-    if(!html_1.innerHTML.match(/30%/gi)){
+    if(!html_1.innerHTML.match(/20%/gi)){
       html_1.innerHTML = (parseInt(html_1.innerHTML) + 1) + '%';
     } else {
       clearInterval();
@@ -15,18 +15,30 @@
 
   let css_1 = document.querySelector('#css1');  
 
-    if(!css_1.innerHTML.match(/50%/gi)){
+    if(!css_1.innerHTML.match(/20%/gi)){
       css_1.innerHTML = (parseInt(css_1.innerHTML) + 1) + '%';
     } else {
       clearInterval();
     }
   }, 24)
 
+
+  var bootstrap = setInterval(function(){
+
+    let bootstrap_1 = document.querySelector('#btstrp');
+  
+      if(!bootstrap_1.innerHTML.match(/50%/gi)){
+        bootstrap_1.innerHTML = (parseInt(bootstrap_1.innerHTML) + 1) + '%';
+      } else {
+        clearInterval();
+      }
+    }, 24)
+
   var js1 = setInterval(function(){
 
   let js_1 = document.querySelector('#js1');
 
-  if(!js_1.innerHTML.match(/20%/gi)){
+  if(!js_1.innerHTML.match(/10%/gi)){
     js_1.innerHTML = (parseInt(js_1.innerHTML) + 1) + '%';
   } else {
     clearInterval();
@@ -38,7 +50,7 @@
 
     let html_2 = document.querySelector('#html2');
   
-      if(!html_2.innerHTML.match(/30%/gi)){
+      if(!html_2.innerHTML.match(/10%/gi)){
         html_2.innerHTML = (parseInt(html_2.innerHTML) + 1) + '%';
       } else {
         clearInterval();
@@ -103,6 +115,8 @@ let sq_1 = document.querySelector('#sq1');
               }, 24)
     
 
+sq1
+bootstrap
 cs1
 js1
 css1
